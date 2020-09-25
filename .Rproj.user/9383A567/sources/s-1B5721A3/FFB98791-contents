@@ -71,8 +71,9 @@ knitr::include_graphics("images/cistransazobenzene.png")
 
 - Suggest why the trans conformation is more stable than the cis isomer. 
 
-- Use the following data to predict the proportion of each isomer under 360 nm excitation. 
-Table: (\#tab:azobenzneabs) The molar extinction coefficient of the two isomers of azobenzene.
+- Use the following data to predict the proportion of each isomer under 360 nm excitation.
+
+Table: (\#tab:azobenzeneabs) The molar extinction coefficient of the two isomers of azobenzene.
 
 | | ε~360~ / M^−1^ cm^−1^ | ε~460~ / M^−1^ cm^−1^|
 |:--------------|:---------|:---------|
@@ -84,7 +85,7 @@ Table: (\#tab:azobenzneabs) The molar extinction coefficient of the two isomers 
 
 - It has been suggested the 360 nm absorption is an S~0~ → S~2~ absorption, and the 460 nm band is an S~0~ → S~1~ absorption. Suggest which energy levels are involved for each of the two transitions and compare it to stilbene which has a similar structure, but the cis and trans absorptions are 280 & 295 nm respectively.
 
-```{r echo=FALSE, stilbene, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The  structure of stilbene'}
+```{r echo=FALSE, stilbene, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The  structure of stilbene'}
 knitr::include_graphics("images/stilbene.png")
 ```
 
