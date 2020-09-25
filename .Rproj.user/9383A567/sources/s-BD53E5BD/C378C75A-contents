@@ -15,7 +15,7 @@ description: "Photochemistry lecture notes for Distance Learning in Chemistry at
 
 The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. Further you can download the questions (and later the answers, top left of the screen) in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
 
-# Workshops for Photochemistry & Photophysics {-}
+## Workshops for Photochemistry & Photophysics {-}
 
 The course will use a question first approach and we will learn the material by answering the questions. The questions will be shared here in an accessible format, and this page will be updated weekly.
 

@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "4161242866",
     "id" : "C378C75A",
-    "lastKnownWriteTime" : 1601037287,
-    "last_content_update" : 1601037287572,
+    "lastKnownWriteTime" : 1601039136,
+    "last_content_update" : 1601039136437,
     "path" : "~/Library/Mobile Documents/com~apple~CloudDocs/GitHub/PhotochemistryWorkshop/index.Rmd",
     "project_path" : "index.Rmd",
     "properties" : {
-        "cursorPosition" : "17,48",
-        "scrollLine" : "14"
+        "cursorPosition" : "17,2",
+        "scrollLine" : "13"
     },
     "relative_order" : 2,
     "source_on_save" : false,
