@@ -1,5 +1,5 @@
 --- 
-title: "Photochemistry and Photophysics Workshop Answers"
+title: "CH10009 Workshop Questions"
 author: "Fiona Dickinson"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -8,22 +8,33 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: chemfd/photochemistryWorkshops
-description: "Photochemistry workshop answers for CH30129"
+github-repo: chemfd/CH10009WorkshopQuestions
+description: "Workshop questions for CH10009 Maths"
 ---
 # Welcome {-}
 
 The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. Further you can download the questions (and later the answers, top left of the screen) in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
 
-## Workshops for Photochemistry & Photophysics {-}
+If you spot any typos or think there are any errors please let me know and I will do my best to fix them.
 
-This answerbook for CH30129 workshops will be updated weekly (hopefully the day after workshops) including thoughts and answers from you as a class. I will include video workthroughs of some answers, but others will be text based.
+## Workshops for CH10009 {-}
+
+The topics for LOILS each week are as follows:
+
+- Week 1: General Q&A
+- Week 2: Rearranging equations, units and standard form
+- Week 3: Logarithms and exponentials
+- Week 4: Tables and graphs
+- Week 5: Calculus - differentiation - the basics and the chain rule
+- Week 6: Calculus - differentiation - the product rule and partial differentiation
+- Week 7: Calculus - integration - the basics and definite integrals
+- Week 8: Some more examples of integration and revision
+
+This 'book' will be updated weekly with workshop questions, answers will be provided and some answers will include 'process' as well as answer. Please contact me if you need help.
 
 I am using this format as it is an accessible format.
 
 ## Version history {-}
 
-Updated to include workshop week 2 questions 021020
-Typos on workshop 1 were fixed 280920
-The initial commit of this book is dated 25th September 2020.
+The initial commit of this book is dated 2nd October 2020.
 
