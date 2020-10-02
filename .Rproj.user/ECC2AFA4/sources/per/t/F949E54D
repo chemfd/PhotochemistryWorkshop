@@ -1,24 +1,24 @@
 {
     "id": "F949E54D",
-    "path": "~/Documents/GitHub/CH10009MathsWorkshop/index.Rmd",
+    "path": "~/Documents/GitHub/PhotochemistryWorkshop/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "357401249",
+    "hash": "1438298720",
     "contents": "",
     "dirty": false,
     "created": 1601283433995.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
-        "cursorPosition": "25,37",
-        "scrollLine": "19"
+        "cursorPosition": "25,51",
+        "scrollLine": "12"
     },
     "folds": "",
-    "lastKnownWriteTime": 1601642959,
+    "lastKnownWriteTime": 1601635075,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1601642959038,
+    "last_content_update": 1601635075170,
     "read_only": false,
     "read_only_alternatives": []
 }

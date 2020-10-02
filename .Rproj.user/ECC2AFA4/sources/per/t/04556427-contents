@@ -1,0 +1,124 @@
+# Workshop Answers for Week 1 {#ch:Workshop1}
+
+## Short mathematical question - Beer Lambert law {#sec:BeerLambert}
+<span style="color: darkcyan;">  - *How far can monochromatic 489 nm light travel through a 0.100 M solution of fluorescein with an extinction coefficient at 489 nm of 92000 M^−1^ cm^−1^ before 90 % of it is absorbed?* \span
+
+If 90% of the incident light is being absorbed then 10% of the light is transmitted...
+
+The Beer-Lambert law is (Equation \@ref(eq:BeerLambert)):
+
+\begin{equation}
+\log{\frac{I}{I_0}}=-\varepsilon c l
+(\#eq:BeerLambert)
+\end{equation}
+
+rearranging this:
+
+\begin{equation*}
+l = \frac{\log{\frac{I_0}{I}}}{\varepsilon c}
+\end{equation*}
+
+\begin{equation*}
+l = \frac{\log{\frac{100 \%}{10 \%}}}{92000 \textrm{ M}^{-1} \textrm{ cm}^{-1} \times 0.100 \textrm{ M}}
+\end{equation*}
+
+\begin{equation*}
+l = \frac{1}{9200000 \textrm{ M}^{-1} \textrm{ m}^{-1} \times 0.100 \textrm{ M}}
+\end{equation*}
+
+\begin{equation*}
+l = 1.0 \textrm{ μm}
+\end{equation*}
+
+## Short conceptual question - molar extinction coefficient {#sec:MolarExtinction}
+<span style="color: darkcyan;"> *- Modify the molecule in figure \@ref(fig:bpy) to increase the molar extinction coefficient (do not worry about what may happen to wavelength).* \span
+
+```{r echo=FALSE, bpy, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The structure of bipyridine (also known as bpy).'}
+knitr::include_graphics("images/bpy.png")
+```
+
+
+
+## Short conceptual question - intensity of colour {#sec:intensity}
+
+<span style="color: darkcyan;">*- What factors influence the ‘intensity of colour’ of the following solutions?* \span
+
+```{r echo=FALSE, molarextstructures, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The structures of the organic dye methylene blue (left), potassium permanganate (centre) and copper hexa-aqua (right).'}
+knitr::include_graphics("images/molarextquestion.png")
+```
+
+```{r echo=FALSE, molarextsolutions, out.width='70%', fig.show='hold', fig.align='center', fig.cap='1 mM solutions of the organic dye methylene blue (right), potassium permanganate (centre) and copper (hexa-aqua) sulfate (left).'}
+knitr::include_graphics("images/Molar_extinction_coefficients.png")
+```
+
+CuSO~4~ in solution forms the hexa aqua complex listed in figure \@ref(fig:molarextstructures). This is a centrosymmetric molecule which therefore runs foul of the Laporte selection rule which says that "allowed transitions in centrosymmetric molecules must involve a change in parity". So either g → u or u → g are allowed, and g → g and u → u are forbidden.
+
+You will not be expected to work out symetry types for orbitals but can 'back justify' to explain with this.
+
+These symmetry labels appear on the energy level diagram for CU^2+^ (figure \@ref(fig:Cu2+))
+
+```{r echo=FALSE, Cu2+, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The splitting of the d-orbitals in octahedral Cu^2+^, the transition is between the HOMO t~2g~ level and the PUMO e~g~ level. The subscript g on each of these orbitals is a symmetry label indicating there is no change or parity and so the transition is Laporte forbidden.'}
+knitr::include_graphics("images/CuIIenergylevels.png")
+```
+
+
+## Short conceptual question - line width {#sec:linewidth}
+
+<span style="color: darkcyan;"> - *Why are some spectra very broad (figure \@ref(fig:molecular)), whereas others have sharp peaks (figure \@ref(fig:atomic))?* \span
+
+<span style="color: darkcyan;">*You will need to look at the x-scale to truley note the difference in the width of these emission spectra.* \span
+
+ 
+```{r echo=FALSE, molecular, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The emission spectrum of rhodamine 6G'}
+knitr::include_graphics("images/rhodamine6G.png")
+```
+
+
+```{r echo=FALSE, atomic, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The emission spectrum of Sn(II)'}
+knitr::include_graphics("images/atomic_emission_spectrum.png")
+```
+
+
+## Short conceptual question - the effect of solvation on absorbance {#sec:solvationabs}
+
+```{r echo=FALSE, ethidium, out.width='70%', fig.show='hold', fig.align='center', fig.cap='Ethidium bromide dissolved in from right; water(orange), methanol, ethanol, propanol and butanol(purple)'}
+knitr::include_graphics("images/ethidium.png")
+```
+
+<span style="color: darkcyan;"> - *Why does the observed colour of ethidium bromide depend upon the solvent (figure \@ref(fig:ethidium)))?* \span
+
+<span style="color: darkcyan;"> *Think about the effect of solvation on the energy levels and why those energy levels matter! Remember that if light is transmitted through a solution that is the colour we observe...* \span
+ 
+
+
+
+## Extended question - Azobenzene {#sec:Azobenzene}
+
+<span style="color: darkcyan;"> *Azobenzene undergoes the following cis-trans isomerisation, the isomerisation occurs in the ps timescale.* \span
+
+```{r echo=FALSE, cistransazobenzene, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The cis-trans isomerisation of azobenzene'}
+knitr::include_graphics("images/cistransazobenzene.png")
+```
+
+<span style="color: darkcyan;"> - *Why would you expect the absorption spectrum of each isomer to be different?* \span
+
+<span style="color: darkcyan;"> - *Suggest why the trans conformation is more stable than the cis isomer.* \span
+
+ <span style="color: darkcyan;">- *Use the following data to predict the proportion of each isomer under 360 nm excitation.* \span
+
+ <span style="color: darkcyan;"> *Table: (\#tab:azobenzeneabs) The molar extinction coefficient of the two isomers of azobenzene.* \span
+
+| | ε~360~ / M^−1^ cm^−1^ | ε~460~ / M^−1^ cm^−1^|
+|:--------------|:---------|:---------|
+| trans-azobenzene | 22000 | 4500 |
+| cis-azobenzene |2100 | 5500 |
+ 
+<span style="color: darkcyan;"> - *Would there be more or less trans azobenzene at 460 nm? Justify your answer.* \span
+
+
+<span style="color: darkcyan;"> - *It has been suggested the 360 nm absorption is an S~0~ → S~2~ absorption, and the 460 nm band is an S~0~ → S~1~ absorption. Suggest which energy levels are involved for each of the two transitions and compare it to stilbene which has a similar structure, but the cis and trans absorptions are 280 & 295 nm respectively.* \span
+
+```{r echo=FALSE, stilbene, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The  structure of stilbene'}
+knitr::include_graphics("images/stilbene.png")
+```
+
