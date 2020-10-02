@@ -1,5 +1,5 @@
 --- 
-title: "Photochemistry and Photophysics Workshops"
+title: "Photochemistry and Photophysics Workshop Answers"
 author: "Fiona Dickinson"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -9,7 +9,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: chemfd/photochemistryWorkshops
-description: "Photochemistry lecture notes for Distance Learning in Chemistry at Bath CH30217"
+description: "Photochemistry workshop answers for CH30129"
 ---
 # Welcome {-}
 
@@ -17,10 +17,13 @@ The notes have been prepared in a package called BookDown for RStudio so that th
 
 ## Workshops for Photochemistry & Photophysics {-}
 
-The course will use a question first approach and we will learn the material by answering the questions. The questions will be shared here in an accessible format, and this page will be updated weekly.
+This answerbook for CH30129 workshops will be updated weekly (hopefully the day after workshops) including thoughts and answers from you as a class. I will include video workthroughs of some answers, but others will be text based.
+
+I am using this format as it is an accessible format.
 
 ## Version history {-}
 
+Updated to include workshop week 2 questions 021020
 Typos on workshop 1 were fixed 280920
 The initial commit of this book is dated 25th September 2020.
 
