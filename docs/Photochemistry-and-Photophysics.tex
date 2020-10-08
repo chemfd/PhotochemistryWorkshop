@@ -36,7 +36,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={Photochemistry and Photophysics Workshops},
+  pdftitle={Photochemistry and Photophysics Workshop},
   pdfauthor={Fiona Dickinson},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
@@ -50,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,15 +75,12 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
-\title{Photochemistry and Photophysics Workshops}
+\title{Photochemistry and Photophysics Workshop}
 \author{Fiona Dickinson}
-\date{2020-09-25}
+\date{2020-10-09}
 
 \begin{document}
 \maketitle
@@ -102,12 +99,17 @@ The notes have been prepared in a package called BookDown for RStudio so that th
 \section*{Workshops for Photochemistry \& Photophysics}\label{workshops-for-photochemistry-photophysics}}
 \addcontentsline{toc}{section}{Workshops for Photochemistry \& Photophysics}
 
-The course will use a question first approach and we will learn the material by answering the questions. The questions will be shared here in an accessible format, and this page will be updated weekly.
+This answerbook for CH30129 workshops will be updated weekly (hopefully the day after workshops) including thoughts and answers from you as a class. I will include video workthroughs of some answers, but others will be text based.
+
+I am using this format as it is an accessible format.
 
 \hypertarget{version-history}{%
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
+Updated to include workshop week 3 questions 091020
+Updated to include workshop week 2 questions 021020
+Typos on workshop 1 were fixed 280920
 The initial commit of this book is dated 25th September 2020.
 
 \hypertarget{ch:Workshop1}{%
@@ -138,7 +140,7 @@ The initial commit of this book is dated 25th September 2020.
 
 }
 
-\caption{The structures of the organic dye methylene blue (left), potassium permanganate (centre) and copper hexa-aqua (right).}\label{fig:bpy}
+\caption{The structure of bipyridine (also known as bpy).}\label{fig:bpy}
 \end{figure}
 
 \emph{(I will use UniDoodle's drawing feature to ask this in class)}
@@ -167,7 +169,7 @@ The initial commit of this book is dated 25th September 2020.
 
 }
 
-\caption{1 mM solutions of the organic dye methylene blue (right), potassium permanganate (centre) and copper hexa-aqua (right).}\label{fig:molarextsolutions}
+\caption{1 mM solutions of the organic dye methylene blue (right), potassium permanganate (centre) and copper hexa-aqua (left).}\label{fig:molarextsolutions}
 \end{figure}
 
 \emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
@@ -280,6 +282,323 @@ cis-azobenzene & 2100 & 5500\tabularnewline
 \end{figure}
 
 \emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat. I don't expect to finish this question but hope to get far enough through that a good attempt can be made at home after the LOIL)}
+
+\hypertarget{ch:Workshop2}{%
+\chapter{Workshop Questions for Week 2}\label{ch:Workshop2}}
+
+\hypertarget{sec:YieldLifetime}{%
+\section{Short mathematical question - Quantum Yield and lifetime}\label{sec:YieldLifetime}}
+
+The quantum yield and lifetime of a dye were measured to be 0.43 \& 2.6 ns respectively. What is the natural lifetime?
+
+\emph{(I will use MCQs and UniDoodle to ask this in class)}
+
+\hypertarget{sec:otherprocesses}{%
+\section{Short conceptual question - Effect of other processes}\label{sec:otherprocesses}}
+
+For a given value of τ\textsubscript{0} what happens to the lifetime and quantum yield as k\textsubscript{IC} and k\textsubscript{ISC} increases?
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{sec:structure}{%
+\section{Conceptual question - Effect of structure}\label{sec:structure}}
+
+Fluorescein (figure \ref{fig:fluorescein}) in basic aqueous solution has a quantum yield of fluorescence, Φ\textsubscript{f}, of 0.95, and fluorescence lifetime, τ\textsubscript{f}, of 4.1 ns.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/fluorescein} 
+
+}
+
+\caption{The structure of the fluorescent molecule fluorescein}\label{fig:fluorescein}
+\end{figure}
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{conceptual-question---lack-of-symmetry-in-spectra.}{%
+\section{Conceptual question - lack of symmetry in spectra.}\label{conceptual-question---lack-of-symmetry-in-spectra.}}
+
+The absorption and emission spectrum of fluorescein is shown in figure (\ref{fig:fluoresceinspec})
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/fluoresceinspec} 
+
+}
+
+\caption{The absorption (solid) and emission (dashed) spectrum of fluorescein in basic ethanol.}\label{fig:fluoresceinspec}
+\end{figure}
+
+Why are the absorption bands between 200 -- 350 nm not reflected in the emission spectrum?
+
+\hypertarget{sec:stokes}{%
+\section{Conceptual question - Stokes' shift}\label{sec:stokes}}
+
+The inorganic dye {[}Ru(bpy)\textsubscript{3}{]}\textsuperscript{2+} has a measured lifetime in water of 580 ns and a natural lifetime of 13.8 µs. The spectrum is shown in figure \ref{fig:Rubpyspec}. What is the origin of the large Stokes' shift in this system?
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/Rubpy3spectra} 
+
+}
+
+\caption{The absorption (black) and emission (red) spectrum of ruthenium tris bypyridine in water.}\label{fig:Rubpyspec}
+\end{figure}
+
+Data from Shi \emph{et al.}, Synthesis and characterization of phosphorescent two coordinate copper(I) complexes bearing diamidocarbene ligands. \href{https://doi.org/10.1039/C6DT04016K}{Dalton Trans., 2017,46, 745-752.}
+
+\hypertarget{sec:binding}{%
+\section{Conceptual question - the effect of binding on emission}\label{sec:binding}}
+
+The asymmetric cyanine dye YO-Pro-1 is a DNA stain because it has a large increase on fluorescence emission when binding to DNA. The lifetime in free solution is around 2 ps and when bound to DNA is 2.4 ns. What is the structural origin of the large increase of emission upon binding?
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/YODNA} 
+
+}
+
+\caption{The emission spectrum of the choromophore YO-Pro-1 when free in aqueous solution (blue) and when bound to DNA (pink)}\label{fig:YODNA}
+\end{figure}
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{extended-question---properties-of-ethidium-bromide-example-exam-question}{%
+\section{Extended question - Properties of Ethidium Bromide (Example Exam Question)}\label{extended-question---properties-of-ethidium-bromide-example-exam-question}}
+
+Ethidium bromide (EB, figure \ref{fig:ethidiumstructure} is used as a DNA stain, which is essentially non-fluorescent in aqueous solution, but shows a strong enhancement of emission upon binding to double stranded DNA (which has a negatively charged backbone).
+
+Emission is almost exclusively from the singlet excited state, but a triplet state has been shown to exist, which emits with a low quantum yield (Φ\textsubscript{P} = 0.00006).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/ethidiumstructure} 
+
+}
+
+\caption{The structure of the cationic ethidium bromide chromophore.}\label{fig:ethidiumstructure}
+\end{figure}
+
+\begin{itemize}
+\item
+  Sketch a Jablonski diagram for the processes you know to occur.
+\item
+  The molar extinction coefficient, ε, of EB has be measured to be 78500 M\textsuperscript{−1} cm\textsuperscript{−1}. What factors contribute to EB having such a high extinction coefficient?
+\end{itemize}
+
+The following spectra, lifetimes and quantum yield have been measured for EB in different free solution and DNA systems:
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{\label{tab:ethidiumlifetime} The lifetimes and quantum yields of ethidium bromide in aquous solution and when bound to DNA in protiated and deuterated systems.}\tabularnewline
+\toprule
+& τ / ns & Φ\textsubscript{f}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+& τ / ns & Φ\textsubscript{f}\tabularnewline
+\midrule
+\endhead
+H\textsubscript{2}O (no DNA) & 1.6 & 0.012\tabularnewline
+D\textsubscript{2}O (no DNA) & 6.3 &\tabularnewline
+DNA & 28.3 & 0.220\tabularnewline
+DNA (deuterated) & 38.4 &\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/ethidiumspectra} 
+
+}
+
+\caption{The absorption (black) and emission (pink) spectrum of ethidium bromide when bound to DNA.}\label{fig:ethidiumspectra}
+\end{figure}
+
+\begin{itemize}
+\item
+  What factors likely lead to an enhancement of fluorescence quantum yield upon binding to DNA?
+\item
+  Show that the natural lifetime of EB is 129 ns.
+\item
+  What is the origin of the large Stoke's shift (λ\textasciitilde max ex\textasciitilde{} = 520 nm, λ\textasciitilde max em\textasciitilde{} = 608 nm)
+\item
+  What transitions are responsible for the absorption features in the:
+  * 400-600 nm range
+  * 200-350 nm range
+\item
+  Why are the features in the 200-350 nm range not replicated in the emission spectrum?
+\item
+  Why does deuterating the solvent (or DNA) effect the lifetime of the excited state?
+\item
+  What effect would freezing the samples have on the lifetime, fluorescence quantum yield \& phosphorescence quantum yield.
+\end{itemize}
+
+A study of the thermodynamics of the dye DNA system measured the binding constant of EB with DNA to be 1.05 × 10\textsuperscript{6}.
+
+\begin{itemize}
+\item
+  Why is the measured quantum yield for a system containing 2 µM EB and 20 mM DNA only 0.18?
+\item
+  Why would increasing the ionic strength of the solution, increase the fluorescence intensity of EB in solution with DNA?
+\end{itemize}
+
+\hypertarget{ch:Workshop3}{%
+\chapter{Workshop Questions for Week 3}\label{ch:Workshop3}}
+
+\hypertarget{sec:overlap}{%
+\section{Short conceptual question - Electronic-vibrational overlap integrals}\label{sec:overlap}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/overlap} 
+
+}
+
+\caption{The grond and excited state potential wells and the vibrational levels within them.}\label{fig:overlap}
+\end{figure}
+
+On the figure sketch the vibrational energy levels in the ground and the excited state.
+
+How would the following affect this overlap integral?
+1. Energy gap.
+1. The vibrational energy gaps
+1. Reaction coordinate (the difference in structure between ground and excited state)
+
+\emph{(I will use drawing in UniDoodle to ask this in class, with the second part being a discussion question)}
+
+\hypertarget{sec:structureQY}{%
+\section{Short conceptual question - The effect of structural changes on quantum yield}\label{sec:structureQY}}
+
+5,10-dihydroindeno{[}2,1-a{]}indene and trans-stilbene (figure \ref{fig:stilbeneindene}) are similar in structure but have very different fluorescent quantum yields of 0.05 and 1.00 respectively, however for trans-stilbene this increases to 0.75 at 77 K. Suggest a reason for the difference in quantum yield of:
+- the two molecules
+- the two temperatures
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{Images/stilbeneindene} 
+
+}
+
+\caption{5,10-dihydroindeno[2,1-a]indene (left) and trans-stilbene (right)}\label{fig:stilbeneindene}
+\end{figure}
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{sec:ratephos}{%
+\section{Short mathematical question - Effect of the rate of singlet triplet intersystem crossing on th quantum yield of phosphorescence}\label{sec:ratephos}}
+
+Why is it likely that the quantum yield of phosphorescence of a sample would increase after the sample is frozen.
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{sec:calcphos}{%
+\section{Short mathematical question - Determining the quantum yield of phosphorescence}\label{sec:calcphos}}
+
+A molecule decays by a combination of internal conversion, intersystem crossing and phosphorescence. What is the quantum yield of phosphorescence?
+
+\begin{itemize}
+\tightlist
+\item
+  k\textsubscript{IC} = 2.1 × 10\textsuperscript{11} s\textsuperscript{−1}
+\item
+  k\textsubscript{ST} = 2.9 × 10\textsuperscript{9} s\textsuperscript{−1}
+\item
+  k\textsubscript{TS} = 7.4 × 10\textsuperscript{6} s\textsuperscript{−1}
+\item
+  k\textsubscript{p}\textsuperscript{o} = 6.2 × 10\textsuperscript{8} s\textsuperscript{−1}
+\end{itemize}
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{sec:exhydrocarbons}{%
+\section{Short conceptual question - Deactivation of excited state aromatic hydrocarbsons}\label{sec:exhydrocarbons}}
+
+\begin{longtable}[]{@{}llll@{}}
+\caption{\label{tab:smallmolQY} The quantum yields of various deactivation processes in small organic molecules measured at 77 K in a glass matrix.}\tabularnewline
+\toprule
+& Φ\textsubscript{f} & Φ\textsubscript{ST} & ΔE / kJ mol\textsuperscript{−1}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+& Φ\textsubscript{f} & Φ\textsubscript{ST} & ΔE / kJ mol\textsuperscript{−1}\tabularnewline
+\midrule
+\endhead
+Napthalene & 0.20 & 0.80 & 385\tabularnewline
+Anthracene & 0.70 & 0.30 & 318\tabularnewline
+Pyrene & 0.6 & low & 322\tabularnewline
+Tetracene & 0.1 & 0.65 & 251\tabularnewline
+Pentacene & 0.10 & 0.15 & 209\tabularnewline
+\bottomrule
+\end{longtable}
+
+When examining the data above suggest why it is likely why the quantum yields of both fluorescence and singlet to triplet intersystem crossing decrease with increasing molecule size.
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{sec:dsolvent}{%
+\section{Short conceptual question - Affect of deuteration of solvents.}\label{sec:dsolvent}}
+
+Singlet oxygen has a phosphorescence wavelength of around 1070 nm and a lifetime of 2 µs in water, how would you expect this lifetime to change for singlet oxygen in D\textsubscript{2}O?
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{sec:isotope}{%
+\section{Short conceptual question - Isotope effects on deactivation of an excited state}\label{sec:isotope}}
+
+The fluorescence quantum yield and singlet state lifetime of both proteated and deuterated pyrene are 0.90 and 450 ns respectively. Why does deuteration of the sample have no measureable affect on these values?
+
+Conversely for naphthalene phosphorescence (in glass at 77 K) the quantum yield of phosphoresce increases from 0.05 to \textasciitilde0.80 on deuteration of the sample. (ΔE = 251 kJ mol\textsuperscript{−1} ). Explain this observation with respect to the energy gap law.
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{sec:heavy}{%
+\section{Short conceptual question - The effect of heavy attoms on the rate of intersystem crossing}\label{sec:heavy}}
+
+\begin{longtable}[]{@{}llll@{}}
+\caption{\label{tab:heavyatom} The affect of substitution of different halogens on the rates of phosphorescence and singlet to triplet intersystem crossing.}\tabularnewline
+\toprule
+& k\textsubscript{p} & k\textsubscript{ST} & Φ\textsubscript{p} / Φ \textsubscript{f}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+& k\textsubscript{p} & k\textsubscript{ST} & Φ\textsubscript{p} / Φ \textsubscript{f}\tabularnewline
+\midrule
+\endhead
+Napthalene & 0.05 & 0.39 & 0.09\tabularnewline
+1-fluoronaphthalene & 0.23 & 0.42 & 0.07\tabularnewline
+1-chloronaphthalene & 1.1 & 2.35 & 5.2\tabularnewline
+1-bromonaphthalene & 13.5 & 36.5 & 169\tabularnewline
+1-iodonaphthalene & 190 & 310 & \textgreater760\tabularnewline
+\bottomrule
+\end{longtable}
+
+Briefly explain why the rates of these processes increase as we move down the group.
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{sec:osphen}{%
+\section{Short conceptual question - The effect of absorbance and emission wavelengths on the quantum yield of emission}\label{sec:osphen}}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{\label{tab:osphen} The spectroscopic details of a family of osmium complexes.}\tabularnewline
+\toprule
+& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ ns & Φ\textsubscript{em}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ ns & Φ\textsubscript{em}\tabularnewline
+\midrule
+\endhead
+{[}Os(phen)\textsubscript{3}{]}\textsuperscript{2+} & 650 & 720 & 0.186 & 260 & 0.016\tabularnewline
+{[}Os(phen)\textsubscript{2}(dppene){]}\textsuperscript{2+} & 455 & 609 & 0.69 & 1830 & 0.138\tabularnewline
+{[}Os(phen)(dppene)\textsubscript{2}{]}\textsuperscript{2+} & 400 & 530 & 0.761 & 3600 & 0.518\tabularnewline
+\bottomrule
+\end{longtable}
+
+Why does the fluorescence lifetime increase as the phenanthroline ligands are replaced with dppene ligands?
+
+\emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
 
   \bibliography{book.bib,packages.bib}
 

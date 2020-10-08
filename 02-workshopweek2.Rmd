@@ -20,8 +20,6 @@ Fluorescein (figure \@ref(fig:fluorescein)) in basic aqueous solution has a quan
 knitr::include_graphics("images/fluorescein.png")
 ```
 
-Suggest why the fluorescence quantum yield in this system is so high.
-
 *(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*
 
 ## Conceptual question - lack of symmetry in spectra.
