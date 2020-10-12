@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/PhotochemistryWorkshopAnswers/01-workshopweek1.Rmd",
     "project_path": null,
     "type": "r_markdown",
-    "hash": "200964661",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1601479303249.0,
@@ -14,11 +14,11 @@
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1601480019,
+    "lastKnownWriteTime": 1601893846,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1601480019154,
+    "last_content_update": 1601893846,
     "read_only": false,
     "read_only_alternatives": []
 }

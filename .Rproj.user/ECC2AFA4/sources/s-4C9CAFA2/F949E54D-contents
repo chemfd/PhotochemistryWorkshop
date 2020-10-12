@@ -1,5 +1,5 @@
 --- 
-title: "Photochemistry and Photophysics Workshop Answers"
+title: "Photochemistry and Photophysics Workshop"
 author: "Fiona Dickinson"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -23,7 +23,13 @@ I am using this format as it is an accessible format.
 
 ## Version history {-}
 
+Updated to correct type on question 3.2.2 121020
+
+Updated to include workshop week 3 questions 091020
+
 Updated to include workshop week 2 questions 021020
+
 Typos on workshop 1 were fixed 280920
+
 The initial commit of this book is dated 25th September 2020.
 
