@@ -80,7 +80,7 @@
 
 \title{Photochemistry and Photophysics Workshop}
 \author{Fiona Dickinson}
-\date{2020-10-09}
+\date{2020-10-13}
 
 \begin{document}
 \maketitle
@@ -107,9 +107,16 @@ I am using this format as it is an accessible format.
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
+Week 4 questions started 131020
+
+Updated to correct type on question 3.2.2 121020
+
 Updated to include workshop week 3 questions 091020
+
 Updated to include workshop week 2 questions 021020
+
 Typos on workshop 1 were fixed 280920
+
 The initial commit of this book is dated 25th September 2020.
 
 \hypertarget{ch:Workshop1}{%
@@ -470,7 +477,7 @@ How would the following affect this overlap integral?
 \hypertarget{sec:structureQY}{%
 \section{Short conceptual question - The effect of structural changes on quantum yield}\label{sec:structureQY}}
 
-5,10-dihydroindeno{[}2,1-a{]}indene and trans-stilbene (figure \ref{fig:stilbeneindene}) are similar in structure but have very different fluorescent quantum yields of 0.05 and 1.00 respectively, however for trans-stilbene this increases to 0.75 at 77 K. Suggest a reason for the difference in quantum yield of:
+5,10-dihydroindeno{[}2,1-a{]}indene and trans-stilbene (figure \ref{fig:stilbeneindene}) are similar in structure but have very different fluorescent quantum yields of 1.00 and 0.05 respectively, however for trans-stilbene this increases to 0.75 at 77 K. Suggest a reason for the difference in quantum yield of:
 - the two molecules
 - the two temperatures
 
@@ -599,6 +606,92 @@ Briefly explain why the rates of these processes increase as we move down the gr
 Why does the fluorescence lifetime increase as the phenanthroline ligands are replaced with dppene ligands?
 
 \emph{(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)}
+
+\hypertarget{ch:Workshop4}{%
+\chapter{Workshop Questions for Week 4}\label{ch:Workshop4}}
+
+\hypertarget{sec:diffcontrol}{%
+\section{Short mathematical question - Determining rates of diffusion controlled quenching}\label{sec:diffcontrol}}
+
+The rate of diffusion (\(k_d\)) in solution is given by equation \eqref{eq:diffcontrolrate}, where \(\eta\) is the viscosity of the solution.
+
+\begin{equation}
+k_d = \frac{8RT}{3 \eta}
+\label{eq:diffcontrolrate}
+\end{equation}
+
+Determine the maximum possible rate of diffusion controlled quenching at 20 ºC in:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  water (\(\eta=\) 1.0016 mPa s)
+\item
+  methanol (\(\eta=\) 0.594 mPa s)
+\end{enumerate}
+
+\emph{(I will use UniDoodle to ask this in class - please attempt before the LOIL)}
+
+\hypertarget{sec:emintquench}{%
+\section{Short mathematical question - Determining the effect of diffusion controlled quenching on emission intensity}\label{sec:emintquench}}
+
+What emisison intensity would you expect if 50 mM of a quencher quenches the emission of a chromophore dissolved in basic ethanol at 10 ºC, with natural lifetime of 13.2 ns and emission quantum yield, Φ\textsubscript{f}, of 0.32, if the unqunched intensity is 35240.
+
+\(\eta\)\textasciitilde EtOH, 10 ºC\textasciitilde{} = 1.394 mPa s
+
+\emph{(This will be a discussion question - please attempt before the LOIL and be ready to contribute to the maths process)}
+
+\hypertarget{sec:static}{%
+\section{Short conceptual question - static quenching}\label{sec:static}}
+
+Something something somethign somethign - effect of counter ions or something something
+
+\hypertarget{sec:acridone}{%
+\section{Long mathematical question - Quenching of emission of acridone}\label{sec:acridone}}
+
+Acridone (figure \ref{fig:acridone})is found to be quenched in the presence of potassium iodide in aqueous solution at 26 oC. Solutions were maintained at constant ionic strength by use of KNO2, the KNO2 does not affect the emission intensity of the solution.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/acridone} 
+
+}
+
+\caption{The structure of acridone.}\label{fig:acridone}
+\end{figure}
+
+The following data were collected for the emission of acridone.
+
+\begin{longtable}[]{@{}cccc@{}}
+\caption{\label{tab:acridonequench} The effect of potassium iodide concentration on emission intensity and fluorescence lifetime of acridone in aqueous solution.}\tabularnewline
+\toprule
+{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / arb & τ / ns\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / arb & τ / ns\tabularnewline
+\midrule
+\endhead
+0 & 1.100 & 16580 & 17.60\tabularnewline
+0.040 & 1.060 & 3753 & 3.90\tabularnewline
+0.100 & 1.000 & 1566 & 1.80\tabularnewline
+0.200 & 0.900 & 721 & 0.95\tabularnewline
+0.300 & 0.800 & 446 & 0.64\tabularnewline
+0.500 & 0.600 & 242 & 0.39\tabularnewline
+0.800 & 0.300 & 121 & 0.25\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Using an appropriate plot (or plots) determine if the quenching is static, dynamic or a combination of both mechanisms.
+\item
+  Determine any relevant quenching constants (k\textsubscript{d} and/or K\textsubscript{S} )
+\end{enumerate}
+
+\emph{(This will be a discussion question - please be ready to contribute to the maths process)}
 
   \bibliography{book.bib,packages.bib}
 
