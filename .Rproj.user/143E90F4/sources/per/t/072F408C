@@ -1,24 +1,24 @@
 {
-    "id": "1872E0AD",
+    "id": "072F408C",
     "path": "~/Documents/GitHub/PhotochemistryWorkshop/04-workshopweek4.Rmd",
     "project_path": "04-workshopweek4.Rmd",
     "type": "r_markdown",
-    "hash": "4194512534",
+    "hash": "3279952497",
     "contents": "",
     "dirty": false,
-    "created": 1602624954845.0,
+    "created": 1603233248587.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 3,
     "properties": {
-        "cursorPosition": "36,108",
-        "scrollLine": "27"
+        "cursorPosition": "36,0",
+        "scrollLine": "29"
     },
     "folds": "",
-    "lastKnownWriteTime": 1602629924,
+    "lastKnownWriteTime": 1603230073,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1602629924394,
+    "last_content_update": 1603230073,
     "read_only": false,
     "read_only_alternatives": []
 }

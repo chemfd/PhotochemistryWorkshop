@@ -1,0 +1,44 @@
+# Workshop Questions for Week 5 {#ch:Workshop5}
+
+## Short conceptual question - O2 quenching {#sec:O2quench}
+
+1. Given molecular oxygen has an emission with λ~max~ around 1280 nm why is it such a good quencher of excited states?
+
+1. Why is the efficiency of quenching lower for excited singlet states?
+
+*Are you all happy with the energy level diagram of molecular oxygen?*
+
+*(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*
+
+## Short mathematical question - Förster resonance energy transfer {#sec:FRET}
+
+A donor, D, with an unquenched lifetime of 5.0 ns, was found to have a steady state emission intensity of 20.5 in free solution and 4.1 when in the presence of a quencher, Q. Assuming the Förster distance is 50 Å determine :
+
+1. the transfer efficiency, E.
+1. the lifetime of D in the presence of the quencher Q
+1. the equilibrium separation of D & Q
+1. the rate constant for energy transfer
+
+*(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*
+
+## Short conceptual quesiton - Förster distance {#sec:FRETdist}
+
+Determine the quantum yield of emission of the donor in a FRET pair system where donor and acceptor are separated by the Förster distance, the lifetime of the unquenched system is 8.4 ns. The unquenched quantum yield is 0.58*
+
+
+*(I will poll this question on UniDoodle and then maybe discuss some of the responses)*
+
+
+## Short conceptual quesiton - Donor-accceptor system {#sec:donoracceptor}
+
+In a single molecule study of a donor bound to an acceptor via a flexible, short aliphatic chain it was found that lifetime of the excited state varied (time beween single photon detection of emission after an excitation pulse). Suggest why this is the case.
+
+*(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*
+
+## Short conceptual quesiton - Quenching of ruthenium {#sec:ruquench}
+
+Ruthenium tris bipyridine [Ru(bpy)~3~]^2+^ has a  λ~max, abs~ = 470 nm and λ~max, em~ = 465 nm. The natural lifetime is 13.6 µs.
+
+Suggest why molecular oxygen is an efficient quencher of the emmission of [Ru(bpy)~3~]^2+^.
+
+*(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*

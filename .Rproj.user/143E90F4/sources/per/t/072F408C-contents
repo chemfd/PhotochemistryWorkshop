@@ -36,6 +36,24 @@ When in the presence of a quencher the intensity of emission of a chromophore (Ï
 
 *(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*
 
+## Short conceptual question - static quenching {#sec:static2}
+
+10-methylacridinium chloride (MAC) is quenced in the presence of adenosine monophosphate (AMP, figure (\@ref(fig:AMP))). The effect of quenching is enhanced by addition of sodium sulfate.
+
+In a separate experiment the emssion of MAC is unaffected by addition of  sodium sulfate (when not in the presence of AMP).
+
+Suggest the mechanism of quenching, justifying this with reference to the experimental data.
+
+```{r echo=FALSE, MAC, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The structure of methyl acridinium.'}
+knitr::include_graphics("images/MAC.png")
+```
+
+```{r echo=FALSE, AMP, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The structure of adenosine monophosphate.'}
+knitr::include_graphics("images/AMP.png")
+```
+
+*(This will be a discussion question - please feel free to raise a hand or write comments in the zoom chat)*
+
 ## Long mathematical question - Quenching of emission of acridone {#sec:acridone}
 
 Acridone (figure \@ref(fig:acridone))is found to be quenched in the presence of potassium iodide in aqueous solution at 26 oC. Solutions were maintained at constant ionic strength by use of KNO2, the KNO2 does not affect the emission intensity of the solution.
