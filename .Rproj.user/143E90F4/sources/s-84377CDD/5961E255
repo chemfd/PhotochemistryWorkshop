@@ -3,22 +3,22 @@
     "path": "~/Documents/GitHub/PhotochemistryWorkshop/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "3335247820",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1602628484693.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
-        "cursorPosition": "27,17",
-        "scrollLine": "13"
+        "cursorPosition": "25,23",
+        "scrollLine": "16"
     },
     "folds": "",
-    "lastKnownWriteTime": 1603230169,
+    "lastKnownWriteTime": 1603933293,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1603230169710,
+    "last_content_update": 1603933293,
     "read_only": false,
     "read_only_alternatives": []
 }
