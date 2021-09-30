@@ -11,31 +11,51 @@ link-citations: yes
 github-repo: chemfd/photochemistryWorkshops
 description: "Photochemistry workshop answers for CH30129"
 ---
-# Welcome {-}
+# Welcome 
 
-The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. Further you can download the questions (and later the answers, top left of the screen) in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
+The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. I am using this format as it is a legally accessible format. Further you can download the document in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading (top left of this browser window).
 
-## Workshops for Photochemistry & Photophysics {-}
+This course is structured such that in our 'in person time' we will be workshoping problems. I beleive I have already set enough questions in this set of notes so that they are all ready ahead of schedule, but I will bring some 'reserve' questions if they are required. The reason I have chosen to workshop in our live time is because it is the bet opportunity for interaction, this course has no tutorials associated with it and so I wanted to be able to help you as much as I could.
 
-This answerbook for CH30129 workshops will be updated weekly (hopefully the day after workshops) including thoughts and answers from you as a class. I will include video workthroughs of some answers, but others will be text based.
+Please ensure that you have read through the accompanying notes for each workshop ahead of our inperson time.
 
-I am using this format as it is an accessible format.
+## Workshops for Photochemistry & Photophysics
+
+The answers for questions will only be shared in our workshops which will (hopefully) be recorded on ReView and shared *via* Moodle. I will make available 'handwritten' or typed answers if required, please contact me.
+
+Please download the app [UniDoodle]{http://www.unidoodle.com} prior to our workshops, this is a mechanism where you can 'draw or write' at me.
+
+The schedule for this class is:
+
+Week 1 - Intro to this document, summary of expected prior knowledge.
+Prep for week 2 - Chapter \@ref(ch:Abs)
+Week 2 - Workshop on Absorbance \@ref(ch:Workshop1)
+Prep for week 3 - Chapter \@ref(ch:Em)
+Week 3 - Workshop on Emission \@ref(ch:Workshop2)
+Prep for week 4 - Chapter \@ref(ch:Quench)
+Week 4 - Workshop on Non-emmisive Decay of the Excited State \@ref(ch:Workshop3)
+Prep for week 5 - Chapter \@ref(ch:excited)
+Week 5 - Workshop on Other Excited State Structures \@ref(ch:Workshop4)
+Week 6 - Workshop covering all material from course
+Week 7 - Workshop on past exam questions
+
+
+## Additional Resources {#sec:AddnRes}
+
+Whilst this resource is designed to stand alone, you may find it beneficial to read around the subject or else listen to the concept bites. Please also note that you can (and should) ask questions in the workshops - this is a good use of everyone's time because if you are struggling with something you won't be the only one.
+
+## Report errors
+
+If you spot any errors or areas of lack of clarity, please message me in Teams or preferably report on the error log below:
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc83b-C0FsgDr5eQxvT-2NWwEtvOEwYU1WbLE4j53wWfUDIXQ/viewform?embedded=true" width="640" height="1242" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## Version history {-}
+I may update this work for typos or clarity if people contact me about this (see above), but there will be no substantive changes to the document in this academic year.
 
-Week 6 questions 291020
+No longer COVID version 300921
 
-Week 5 questions 201020
-
-Week 4 questions 131020
-
-Updated to correct type on question 3.2.2 121020
-
-Updated to include workshop week 3 questions 091020
-
-Updated to include workshop week 2 questions 021020
-
-Typos on workshop 1 were fixed 280920
+COVID the first version finished 291020
 
 The initial commit of this book is dated 25th September 2020.
 

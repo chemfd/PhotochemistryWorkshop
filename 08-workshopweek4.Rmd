@@ -1,0 +1,100 @@
+# Workshop Questions for Week 5 {#ch:Workshop4}
+
+## Short mathematical question - Determining rates of diffusion controlled quenching {#sec:diffcontrol}
+
+The rate of diffusion ($k_d$) in solution is given by equation \@ref(eq:diffcontrolrate), where $\eta$ is the viscosity of the solution. 
+
+\begin{equation}
+k_d = \frac{8RT}{3 \eta}
+(\#eq:diffcontrolrate)
+\end{equation}
+
+Determine the maximum possible rate of diffusion controlled quenching at 20 ºC in:
+
+a. water ($\eta=$ 1.0016 mPa s)
+a. methanol ($\eta=$ 0.594 mPa s)
+
+*(I will use UniDoodle to ask this in class)*
+
+## Short mathematical question - Determining the effect of diffusion controlled quenching on emission intensity {#sec:emintquench}
+
+What emisison intensity would you expect if 50 mM of a quencher quenches the emission of a chromophore dissolved in basic ethanol at 10 ºC, with natural lifetime of 13.2 ns and emission quantum yield, Φ~f~, of 0.32, if the unqunched intensity is 35240.
+
+$\eta$~EtOH, 10 ºC~ = 1.394 mPa s
+
+*(This will be a discussion question)*
+
+## Short conceptual question - effect of temperature {#sec:temp}
+
+YO-Pro-1 is quenched in the presence of molecular oxygen, as the temperature increases this quenching increases, what does this indicate about the mechanism of quenchign and why?
+
+*(This will be a discussion question)*
+
+## Short conceptual question - change in behaviour on freezing
+
+As the concentration of a species increases the wavelength of emission increases in the solution phase but this same shift in wavelength is not when the solution is frozen. What photochemical process may be occuring to explain this effect?
+
+*(This will be a discussion question)*
+
+## Short conceptual question - static quenching {#sec:static}
+
+When in the presence of a quencher the intensity of emission of a chromophore (τ~0~ = 5.2 ns) was reduced from 4200 cps to 2100 cps at 25 ºC and 1800 cps at 10 ºC. What would the lifetime of the quenched chromophore be at 25 ºC?
+
+*(This will be a discussion question)*
+
+## Short conceptual question - isoemissive point  
+
+As the concentration of pyrene dissolved in toluene increases a new broad band with a broad featureless spectrum is observed, which is from excimer emisison. What evidence is there that emission is only from single molecule and excimer emission and no other states?
+
+How would the absorption spectrum change as the concentration increases?
+
+```{r echo=FALSE, pyrene, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The emission spectrum of pyrene in tolune as low (solid line) and higher (dotted lines) concentrations.'}
+knitr::include_graphics("images/pyrene.png")
+```
+
+
+## Short conceptual question - static quenching {#sec:static2}
+
+10-methylacridinium chloride (MAC) is quenced in the presence of adenosine monophosphate (AMP, figure (\@ref(fig:AMP))). The effect of quenching is enhanced by addition of sodium sulfate.
+
+In a separate experiment the emssion of MAC is unaffected by addition of  sodium sulfate (when not in the presence of AMP).
+
+Suggest the mechanism of quenching, justifying this with reference to the experimental data.
+
+```{r echo=FALSE, MAC, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The structure of methyl acridinium.'}
+knitr::include_graphics("images/MAC.png")
+```
+
+```{r echo=FALSE, AMP, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The structure of adenosine monophosphate.'}
+knitr::include_graphics("images/AMP.png")
+```
+
+*(This will be a discussion question)*
+
+## Long mathematical question - Quenching of emission of acridone {#sec:acridone}
+
+Acridone (figure \@ref(fig:acridone))is found to be quenched in the presence of potassium iodide in aqueous solution at 26 oC. Solutions were maintained at constant ionic strength by use of KNO2, the KNO2 does not affect the emission intensity of the solution.
+
+```{r echo=FALSE, acridone, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The structure of acridone.'}
+knitr::include_graphics("images/acridone.png")
+```
+
+The following data were collected for the emission of acridone.
+
+Table: (\#tab:acridonequench) The effect of potassium iodide concentration on emission intensity and fluorescence lifetime of acridone in aqueous solution.
+
+| [KI] / M | [KNO~2~] / M | Emission intensity / arb | τ / ns |
+|:--------:|:--------:|:--------:|:--------:|
+| 0 | 1.100 | 16580 | 17.60 |
+| 0.040 | 1.060 | 3753 | 3.90 |
+| 0.100 | 1.000 | 1566 | 1.80 |
+| 0.200 | 0.900 | 721 | 0.95 |
+| 0.300 | 0.800 | 446 | 0.64 |
+| 0.500 | 0.600 | 242 | 0.39 |
+| 0.800 | 0.300 | 121 | 0.25 |
+
+1. Using an appropriate plot (or plots) determine if the quenching is static, dynamic or a combination of both mechanisms. 
+
+1. Determine any relevant quenching constants (k~d~ and/or K~S~ )
+
+*(This will be a discussion question)*
