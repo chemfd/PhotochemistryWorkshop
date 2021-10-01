@@ -1,5 +1,5 @@
 --- 
-title: "Photochemistry and Photophysics Workshop"
+title: "Photochemistry and Photophysics"
 author: "Fiona Dickinson"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
