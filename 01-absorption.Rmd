@@ -99,6 +99,8 @@ Understanding the variation of possible electronic transitions available when el
 knitr::include_graphics("images/Anthracene.png")
 ```
 
+<iframe width="656" height="369" src="https://www.youtube.com/embed/-K2zE0c8DAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Multiplicity {#sec:multiplicity}
 
 If you recall Hunds’ rule when filling atomic and molecular orbitals you will recall that the lowest energy state occurs when the spin of the electrons is aligned. Usually in an organic molecular orbital the HOMO is a fully occupied $\pi$ set, or a fully occupied set of non bonding orbitals with all electrons paired. 

@@ -48,6 +48,7 @@ Table: (\#tab:rateST) The rates of intersystem crossing for a range of organic c
 | 9-acetoanthracence | S~1~ (π,π\*) ⟶ T~1~ (n,π*) | allowed | ~10^10^ |
 | benzophenone | S~1~ (π,π\*) ⟶ T~1~ (n,π*) | allowed | ~10^11^ |
 
+<iframe width="656" height="369" src="https://www.youtube.com/embed/gzurDUqciHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Collisional Deactivation of the Excited State {#sec:Collisional}
 
@@ -207,6 +208,8 @@ k_{ET}=KJe^{-\frac{2r}{L}}
 where $J$ is the overlap integral, $K$ an empirical constant, $r$ the separation between the donor and acceptor, and $L$ another constant which represents the closest possible separation of the donor and acceptor (the sum of the van der Waals radii of the two chromophores).
 
 From examining equation \@ref(eq:ratedexter) it can be seen that the rate of Dexter energy transfer decreases rapidly with increasing separation of donor and acceptor and occurs daily at distances less than 20 Å. Dexter energy transfer is the most dominant mechanism of triplet-triplet quenching.
+
+<iframe width="569" height="427" src="https://www.youtube.com/embed/JSUHF915pYI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Triplet-Triplet Annihilation {#sec:tripletannihilation}
 
