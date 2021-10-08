@@ -84,7 +84,6 @@ In simple organic molecules we only really need to consider $\pi$ and $\pi^\ast$
 The process of absorption of a photon is very fast (~1 fs) (compared with the timescales of vibrations in molecule (~10 ps)), this is the basis of the Franck-Condon principle. Consequently when absorption (and emission) processes are sketched, as in figure \@ref(fig:FrankCondon), absorption and emission can be indicated by vertical transitions.
 
 The ‘strength’ of the absorption transition, which relates to the extinction coefficient in the Beer-Lambert law, and the Einstein $B$ coefficient is in fact a measure of the ‘overlap integral’ of the wave functions of the ground and excited states. 
-It becomes more obvious why the Einstein $B$ and $B’$ factors are only the same in atomic systems, since in the usual ‘lifetime’ of the excited state of molecular systems there is plenty of opportunity for the molecule to undergo structural rearrangement or loose energy if excited into one of the vibrationally excited bands.
 
 ```{r echo=FALSE, FrankCondon, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The vertical line of the absorption transition as the electron is promoted from the ground state to the excited state. The probability of the electron being excited into each vibrational level is given by the ‘overlap’ of the wave functions of ground and each excited state.^[[Franck-Condon Diagram](https://commons.wikimedia.org/wiki/File:Franck-Condon-diagram.png). From Wikimedia Commons, created by [Mark M. Somoza](http://www.gnu.org/licenses/fdl-1.3.html), CC-BY-SA-[3.0](https://creativecommons.org/licenses/by-sa/3.0/). Sept 14. ]'}
 knitr::include_graphics("images/FrankCondon.png")
@@ -125,9 +124,9 @@ The greater the amount of conjugation in a molecule the smaller the energy gap b
 
 This fits with the theory you learnt in your quantum mechanics lectures, where you can model the linear conjugated model quite accurately using the particle in a one dimensional box model.
 
-Table: (\#tab:lambdaconj)  The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, diene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, $n$, electrons into the MO, and a second absorption band $n \longrightarrow \pi^\ast$ introduced with a lower energy transition.
+Table: (\#tab:lambdaconj)  The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, triene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, $n$, electrons into the MO, and a second absorption band $n \longrightarrow \pi^\ast$ introduced with a lower energy transition.
 
-|  | $\lambda$~max~ / nm <br>$\pi \longrightarrow \pi^\ast$    |  | $\lambda$~max~ / nm <br> $\pi \longrightarrow \pi^\ast$  <br> $n \longrightarrow \pi^\ast$|
+|  | $\lambda$~max~ / nm <br>$\pi \longrightarrow \pi^\ast$    |  | $\lambda$~max~ / nm <br> $n \longrightarrow \pi^\ast$  <br> $\pi \longrightarrow \pi^\ast$|
 |:----------|:----------|:----------|:----------|
 | <img src="images/butadienestructure.png" alt="butadiene structure" width="75"/>| 217 | <img src="images/acetonestructure.png" alt="acetone structure" width="50"/>| 270 <br>  187|
 | <img src="images/hexadienestructure.png" alt="hexadiene structure" width="125"/>| 227 | ||
@@ -137,7 +136,7 @@ Table: (\#tab:lambdaconj)  The dependence of maximum absorption wavelength on th
 
 ## Selection rules for absorption & emission processes {#sec:selectionrules}
 
-In molecular systems he most important selection rule is $\Delta S = 0$, or there can be no change in the spin multiplicity during an absorption or emission processes, or there can be no ‘flipping’ of electrons spin during a transition. In practice ‘coupling’ due to interactions between the spin of the electron and the orbital mean that this selection rule is not rigidly followed.
+In molecular systems the most important selection rule is $\Delta S = 0$, or there can be no change in the spin multiplicity during an absorption or emission processes, or there can be no ‘flipping’ of electrons spin during a transition. In practice ‘coupling’ due to interactions between the spin of the electron and the orbital mean that this selection rule is not rigidly followed.
 
 In organic molecules containing only C, H, N & O the direct absorption from S~0~ to T~1~ is so weak that it can’t be seen in the absorption spectra. This ‘spin-orbit coupling’ is more pronounced for heavier elements and molecules containing particularly heavy atoms, such as S, Cl or Br have more relaxed adherence to the $\Delta S = 0$ selection rule.
 
