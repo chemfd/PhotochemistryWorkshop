@@ -67,7 +67,7 @@ The most important of these assumptions is that when in the excited state there 
 
 Figure \@ref(fig:cistransstilbene) shows the absorption spectra of the two isomers of stilbene, there are a number of interesting photophysical details about this molecule, but it should be noted that the molar extinction coefficient is different for each of the isomers. The point where the two spectra cross is called the isobestic point , for stilbene this is 288 nm, if the system is excited at this wavelength then the yield of each isomer will be the same. However at all other wavelengths the yield of one isomer will be higher than the other. If an excitation wavelength is used whereby the molar extinction coefficient of the trans isomer is highest then this isomer is excited preferentially and there is less of this isomer is the photostationary state.
 
-```{r echo=FALSE, cistransstilbene, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The absorption spectra of trans & cis stilbene in hexane.'}
+```{r echo=FALSE, cistransstilbene, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The absorption spectra of trans \\& cis stilbene in hexane.'}
 knitr::include_graphics("images/cistransstilbene.png")
 ```
 

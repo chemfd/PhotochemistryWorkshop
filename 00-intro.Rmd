@@ -50,9 +50,11 @@ I also recommend:
 * The book Principles of Fluorescence Spectroscopy (3rd Edition) by Joseph R. Lakowicz (Springer, ISBN 0387312781) may also be useful for the sections on fluorescence.
 
 
-```{r , echo=FALSE, EMWave, out.width='60%', fig.show='hold', fig.cap='The orthogonal electric and magnetic oscillating fields of plan polarised light, propagating along the x-axis. From: [And1mu](https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)'}
+```{r echo=FALSE, EMWave, out.width='60%', fig.show='hold', fig.align="center", auto_pdf=TRUE, fig.cap="The orthogonal electric and magnetic oscillating fields of plan polarised light, propagating along the x-axis. From: [And1mu](https://upload.wikimedia.org/wikipedia/commons/9/99/EM-Wave.gif) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)"}
 knitr::include_graphics("images/EM-Wave.gif")
 ```
+
+
 
 
 ## Light {#sec:Light}

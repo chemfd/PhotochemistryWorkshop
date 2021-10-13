@@ -26,7 +26,7 @@ When you saw atomic absorption and emission spectra the lines were very sharp, o
 knitr::include_graphics("images/HAbsEm.png")
 ```
 
-```{r echo=FALSE, RhoAbsEm, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The absorption (black) and emission (teal) spectra of Rhodamine 6G in ethanol. The emission spectra was recorded with an excitation wavelength of 480 nm and a bandwidth of 4.25 nm^[Adapted from [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), [2nd July 2014]]'}
+```{r echo=FALSE, RhoAbsEm, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The absorption (black) and emission (teal) spectra of Rhodamine 6G in ethanol. The emission spectra was recorded with an excitation wavelength of 480 nm and a bandwidth of 4.25 nm [Adapted from [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), [2nd July 2014]]'}
 knitr::include_graphics("images/Rhodamine6GAbsEm.png")
 ```
 
@@ -75,7 +75,7 @@ Figure \@ref(fig:Butadiene) shows the valence molecular orbitals of butadiene, s
 
 Upon excitation of an electron there is a mixing of the molecular orbitals of the fully and partially occupied molecular orbitals, in the case of butadiene excitation of an electron from the HOMO to the LUMO (lowest unoccupied molecular orbital), giving the central C-C bond some double bond character, limiting rotation and leading to a structural change of the excited state.
 
-```{r echo=FALSE, Butadiene, out.width='70%', fig.show='hold', fig.align='center', fig.cap='MO diagram of butadiene, each carbon atom is assumed to be sp^2^ hybridised, with linear combination of the 2p~z~ orbitals. As the energy of the levels increases so does the number of nodes. The lowest two energy levels are fully occupied in the ground state, upon absorption of a photon an electron is promoted to one of the anti-bonding orbitals allowing rotation around the double bonds, and giving the centre single bond some double bond character.^[[MO diagram of butadiene](https://2012books.lardbucket.org/books/principles-of-general-chemistry-v1.0m/s13-04-polyatomic-systems-with-multip.html). From by Averill & Eldredge, Principles of General Chemistry licensed under CC BY 2.0. Sept 14.]'}
+```{r echo=FALSE, Butadiene, out.width='70%', fig.show='hold', fig.align='center', fig.cap="MO diagram of butadiene, each carbon atom is assumed to be sp$^2$ hybridised, with linear combination of the 2p$_z$ orbitals. As the energy of the levels increases so does the number of nodes. The lowest two energy levels are fully occupied in the ground state, upon absorption of a photon an electron is promoted to one of the anti-bonding orbitals allowing rotation around the double bonds, and giving the centre single bond some double bond character. [[MO diagram of butadiene](https://2012books.lardbucket.org/books/principles-of-general-chemistry-v1.0m/s13-04-polyatomic-systems-with-multip.html). From by Averill \\& Eldredge, Principles of General Chemistry licensed under CC BY 2.0. Sept 14.]"}
 knitr::include_graphics("images/Butadiene.png")
 ```
 
@@ -85,7 +85,7 @@ The process of absorption of a photon is very fast (~1 fs) (compared with the ti
 
 The ‘strength’ of the absorption transition, which relates to the extinction coefficient in the Beer-Lambert law, and the Einstein $B$ coefficient is in fact a measure of the ‘overlap integral’ of the wave functions of the ground and excited states. 
 
-```{r echo=FALSE, FrankCondon, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The vertical line of the absorption transition as the electron is promoted from the ground state to the excited state. The probability of the electron being excited into each vibrational level is given by the ‘overlap’ of the wave functions of ground and each excited state.^[[Franck-Condon Diagram](https://commons.wikimedia.org/wiki/File:Franck-Condon-diagram.png). From Wikimedia Commons, created by [Mark M. Somoza](http://www.gnu.org/licenses/fdl-1.3.html), CC-BY-SA-[3.0](https://creativecommons.org/licenses/by-sa/3.0/). Sept 14. ]'}
+```{r echo=FALSE, FrankCondon, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The vertical line of the absorption transition as the electron is promoted from the ground state to the excited state. The probability of the electron being excited into each vibrational level is given by the ‘overlap’ of the wave functions of ground and each excited state. [[Franck-Condon Diagram](https://commons.wikimedia.org/wiki/File:Franck-Condon-diagram.png). From Wikimedia Commons, created by [Mark M. Somoza](http://www.gnu.org/licenses/fdl-1.3.html), CC-BY-SA-[3.0](https://creativecommons.org/licenses/by-sa/3.0/). Sept 14. ]'}
 knitr::include_graphics("images/FrankCondon.png")
 ```
 
@@ -155,7 +155,7 @@ Whilst these transitions would be forbidden according to the Laporte rule:
 Consequently the $d-d$ transitions, such as the $t_{2g} \longleftrightarrow e_g$ transition in octahedral complexes, which give most transition metal complexes are forbidden according to the Laporte rule. 
 
 
-```{r echo=FALSE, Tisplitting, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The ligand field splitting of the 3d orbitals in a  [Ti(H~2~O)~6~]^3+^ complex the solution is pale purple with a molar extinction coefficient, ε ~ 6.1 M^−1^ cm^−1^'}
+```{r echo=FALSE, Tisplitting, out.width='60%', fig.show='hold', fig.align='center', fig.cap="The ligand field splitting of the 3d orbitals in a  [Ti(H$_2$O)$_6]$^{3+}$ complex the solution is pale purple with a molar extinction coefficient, ε ~ 6.1 M^−1^ cm$^{−}1$"}
 knitr::include_graphics("images/Ti3splitting.png")
 ```
 
@@ -220,13 +220,13 @@ knitr::include_graphics("images/CS2.png")
 
 For more complicated molecules each of the transitions from the HOMO, HOMO-1 to the LUMO *etc.* occur with different transition dipole moments across the chromophore, figure \@ref{fig:adenosine}. Each transition is only excited when light is aligned with that transition; in most cases this isn’t something we need to consider as most incident light we consider is isotropic, but alignment of transition dipoles  (either between light and molecules - or between two different molecules) is an important consideration.
 
-```{r echo=FALSE, adenosine, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The three lowest energy transitions of adenosine each indicated with their transition dipole moment (all in the plane of the molecule, calculated values).These match with the observed spectrum with a weak transition around 310 nm, a much stronger transition around 260 nm and a third transition starting at the edge of the measured spectrum.^[Spectrum [Adapted from OMLC]( https:// omlc.org/spectra/PhotochemCAD/html/033.html), 31st October 2018]'}
+```{r echo=FALSE, adenosine, out.width='100%', fig.show='hold', fig.align='center', fig.cap="The three lowest energy transitions of adenosine each indicated with their transition dipole moment (all in the plane of the molecule, calculated values).These match with the observed spectrum with a weak transition around 310 nm, a much stronger transition around 260 nm and a third transition starting at the edge of the measured spectrum. [Spectrum [Adapted from OMLC]( https:// omlc.org/spectra/PhotochemCAD/html/033.html), 31st October 2018]"}
 knitr::include_graphics("images/adenosine.png")
 ```
 
 As already discussed the transition dipole moment is derived from the difference in electron density of the ground and excited state. Figure \@ref(fig:PhenRubpy3) shows the HOMO and LUMO of an organic chromophore, and a metal complex MLCT state.
 
-```{r echo=FALSE, PhenRubpy3, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The calculated HOMO (bottom) and LUMO (top) of 1,10-phenanthroline (left) a model planar organic chromophore and [Ru (bpy)~3~]^2+^ (bpy - bipyridine) which has an MLCT state. For the ruthenium complex the HOMO is clearly centred on $4d_{z^2}$ orbital, whereas after absorption of a photon (and transfer of the electron) the electron density is then centred over the ligands in the LUMO.'}
+```{r echo=FALSE, PhenRubpy3, out.width='100%', fig.show='hold', fig.align='center', fig.cap="The calculated HOMO (bottom) and LUMO (top) of 1,10-phenanthroline (left) a model planar organic chromophore and [Ru (bpy)$_3$]$^{2+}$ (bpy - bipyridine) which has an MLCT state. For the ruthenium complex the HOMO is clearly centred on $4d_{z^2}$ orbital, whereas after absorption of a photon (and transfer of the electron) the electron density is then centred over the ligands in the LUMO."}
 knitr::include_graphics("images/PhenRubpy3.png")
 ```
 

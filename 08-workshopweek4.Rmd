@@ -36,7 +36,7 @@ As the concentration of a species increases the wavelength of emission increases
 
 *(This will be a discussion question)*
 
-## Short conceptual question - static quenching {#sec:static}
+## Short conceptual question - static quenching {#sec:static_question}
 
 When in the presence of a quencher the intensity of emission of a chromophore (τ~0~ = 5.2 ns) was reduced from 4200 cps to 2100 cps at 25 ºC and 1800 cps at 10 ºC. What would the lifetime of the quenched chromophore be at 25 ºC?
 

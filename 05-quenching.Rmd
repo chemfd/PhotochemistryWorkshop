@@ -236,7 +236,7 @@ Molecular oxygen is unusual because it is a ground state triplet. It is an effic
 
 \begin{equation}
 \textrm{O}_2(^3 \Sigma _g^-)+ ^\ast \textrm{Dye}(T_1) \longrightarrow ^\ast \textrm{O}_2(^1 \Delta _g) + \textrm{Dye}(S_0)
-(#eq:O2quench)
+(\#eq:O2quench)
 \end{equation}
 
 Usually the molecular oxygen is excited into the ^^Σ~g~^+^ state, but this rapidly decays to the ^1^Δ~g~ state. The ^1^Δ~g~ is usually simply referred to as singlet oxygen and is relatively stable because of the spin forbidden deactivation, having a lifetime of a few µs in aqueous solvent and hours in the gas phase. 

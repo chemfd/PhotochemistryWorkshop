@@ -33,7 +33,7 @@ If we look at a Jablonski diagram, figure 19, which you should already be famili
 
 A Jablonski diagram (figure \@ref(fig:Jablonski)) usually uses a short hand to refer to the excited states, where a ground state, if it is a singlet, is referred to as S~0~, and each subsequent excited state is referred to as S~1~, S~2~ *etc*.
 
-```{r echo=FALSE, Jablonski, out.width='70%', fig.show='hold', fig.align='center', fig.cap='Jablonski diagram showing: A, the absorption of a photon, and the photophysical deactivation pathways, IC, internal conversion, ISC, intersystem crossing, F, fluorescence & P, phosphorescence.'}
+```{r echo=FALSE, Jablonski, out.width='70%', fig.show='hold', fig.align='center', fig.cap='Jablonski diagram showing: A, the absorption of a photon, and the photophysical deactivation pathways, IC, internal conversion, ISC, intersystem crossing, F, fluorescence \\& P, phosphorescence.'}
 knitr::include_graphics("images/Jablonski.png")
 ```
 
@@ -79,7 +79,7 @@ knitr::include_graphics("images/anthracenekasha.png")
 
 The Franck-Condon factors in absorption and emission is clearly evident by the symmetry shown in the emission of most organic chromophores. The Stoke’s shift, the difference between the $v=0$ to $v’=0$ absorption peak and the $v’=0$ to $v=0$ emission peak, can simply be explained by the offset of the ground and excited state potential wells (figure \@ref(fig:stokesspectrum)). Absorption happens from the centre of the $v=0$ ground state and emission from the centre of the $v’=0$ excited state, however this does not explain why the two curves are offset from one another.
 
-```{r echo=FALSE, stokesspectrum, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The absorption and emission spectra of rhodamine 6G showing the Stokes shift of the two spectra.^[Data from [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), accessed July 2020'}
+```{r echo=FALSE, stokesspectrum, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The absorption and emission spectra of rhodamine 6G showing the Stokes shift of the two spectra.[Data from [OMLC](https://omlc.org/spectra/PhotochemCAD/html/083.html), accessed July 2020]'}
 knitr::include_graphics("images/stokesspectrum.png")
 ```
 

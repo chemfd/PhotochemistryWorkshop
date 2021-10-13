@@ -1,6 +1,6 @@
 # Workshop Questions for Week 6 {#ch:Workshop5}
 
-## Short conceptual question - O2 quenching {#sec:O2quench}
+## Short conceptual question - O2 quenching {#sec:O2quench_question}
 
 1. Given molecular oxygen has an emission with λ~max~ around 1280 nm why is it such a good quencher of excited states?
 
