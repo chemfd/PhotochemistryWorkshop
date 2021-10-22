@@ -25,6 +25,12 @@ At the end of this block you should be able to:
 
 Only the light absorbed by a molecule can produce photochemical change in a molecule. If a species absorbs radiation then one particle is excited for each quantum of radiation absorbed. This concept of light having to be absorbed before anything else can happen is an obvious one, but is an important concept in itself, it goes on to define the concept of quantum yield of a process, effectively the proportion of excited states which ‘decay’ to any given pathway.
 
+The reaction coordinate, which appears on our x axis of any plot with potential wells, is essentially a measure of the net difference between the wavefunction of ground and excited state, the bigger the difference the bigger the offset on the reaction coordinate axis.
+
+Wavefunctions are hard to visualise though, and so we may also consider it the sum of the net difference in position of every atom between the ground and excited state, the bigger the structural change, the bigger the difference in wavefunction, and so the bigger the offset on the reaction coordinate axis.
+
+<iframe width="768" height="432" src="https://www.youtube.com/embed/xhTzJr4jlf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Fluorescence & Phosphorescence {#sec:FluorPhos}
 
 Just as there are ‘spin forbidden’ and ‘spin allowed' processes for absorption, when the molecule is in an excited state there are a allowed and forbidden path ways of deactivation of the excited state.
