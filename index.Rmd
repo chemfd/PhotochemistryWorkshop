@@ -27,17 +27,28 @@ Please download the app [UniDoodle]{http://www.unidoodle.com} prior to our works
 
 The schedule for this class is:
 
-Week 1 - Intro to this document, summary of expected prior knowledge.
+Week 1 - Intro to this document, summary of expected prior knowledge
+
 Prep for week 2 - Chapter \@ref(ch:Abs)
+
 Week 2 - Workshop on Absorbance \@ref(ch:Workshop1)
+
 Prep for week 3 - Chapter \@ref(ch:Em)
+
 Week 3 - Workshop on Emission \@ref(ch:Workshop2)
+
 Prep for week 4 - Chapter \@ref(ch:Quench)
+
 Week 4 - Workshop on Non-emmisive Decay of the Excited State \@ref(ch:Workshop3)
+
 Prep for week 5 - Chapter \@ref(ch:excited)
+
 Week 5 - Workshop on Other Excited State Structures \@ref(ch:Workshop4)
+
 Week 6 - Workshop covering all material from course
+
 Week 7 - Workshop on past exam questions
+
 
 I am asmatic, therefore I will be abiding by the university policy of, in lecturers I expect you to either:
 

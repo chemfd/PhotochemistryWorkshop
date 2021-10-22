@@ -86,3 +86,14 @@ Why does the measured lifetime depend upon concentration?
 If a solution of pyrene in cyclohexane is excited with a very short (ps) pulse of lightafter 1 ns the emission spectrum observed is mainly that of the momomer, whereas after 100 ns emission is principally from the excimer. Why is this the case?
 
 *(This will be a discussion question)*
+
+
+### Short conceptual question - effect of polar solvents on emission {#sec:polarsolv}
+
+Solutions containing anthracence and diethylaniline are shown to have broad emission at around 450 nm in toluene, but in dichloromethane no emission is observed.
+
+The emission from athracene has λ~max~ of 375 nm.
+
+Suggest the processes going on which account for these observations.
+
+You can find the answer to this question in \@ref(sec:polarsolvans)

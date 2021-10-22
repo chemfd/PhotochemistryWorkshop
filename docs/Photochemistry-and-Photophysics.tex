@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,7 +41,8 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -83,7 +84,7 @@
 
 \title{Photochemistry and Photophysics}
 \author{Fiona Dickinson}
-\date{2021-10-13}
+\date{2021-10-22}
 
 \begin{document}
 \maketitle
@@ -110,16 +111,26 @@ Please download the app {[}UniDoodle{]}\{\url{http://www.unidoodle.com}\} prior 
 
 The schedule for this class is:
 
-Week 1 - Intro to this document, summary of expected prior knowledge.
+Week 1 - Intro to this document, summary of expected prior knowledge
+
 Prep for week 2 - Chapter \ref{ch:Abs}
+
 Week 2 - Workshop on Absorbance \ref{ch:Workshop1}
+
 Prep for week 3 - Chapter \ref{ch:Em}
+
 Week 3 - Workshop on Emission \ref{ch:Workshop2}
+
 Prep for week 4 - Chapter \ref{ch:Quench}
+
 Week 4 - Workshop on Non-emmisive Decay of the Excited State \ref{ch:Workshop3}
+
 Prep for week 5 - Chapter \ref{ch:excited}
+
 Week 5 - Workshop on Other Excited State Structures \ref{ch:Workshop4}
+
 Week 6 - Workshop covering all material from course
+
 Week 7 - Workshop on past exam questions
 
 I am asmatic, therefore I will be abiding by the university policy of, in lecturers I expect you to either:
@@ -151,6 +162,8 @@ Loading\ldots{}
 \addcontentsline{toc}{section}{Version history}
 
 I may update this work for typos or clarity if people contact me about this (see above), but there will be no substantive changes to the document in this academic year.
+
+reaction coordinate, fluor workshop version 221021
 
 pdf works version 131021
 
@@ -436,68 +449,24 @@ The greater the amount of conjugation in a molecule the smaller the energy gap b
 
 This fits with the theory you learnt in your quantum mechanics lectures, where you can model the linear conjugated model quite accurately using the particle in a one dimensional box model.
 
-\begin{longtable}[]{@{}llll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
 \caption{\label{tab:lambdaconj} The dependence of maximum absorption wavelength on the increasing length of conjugation is clearly shown by moving along the diene, triene, polyene series. Inclusion of a hetero atom with lone pairs introduces non-bonding, \(n\), electrons into the MO, and a second absorption band \(n \longrightarrow \pi^\ast\) introduced with a lower energy transition.}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\)\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)\strut
-\end{minipage}\tabularnewline
+& \(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\) & & \(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\) \\
 \midrule
 \endfirsthead
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\)\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\raggedright
-\(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\)\strut
-\end{minipage}\tabularnewline
+& \(\lambda\)\textsubscript{max} / nm \(\pi \longrightarrow \pi^\ast\) & & \(\lambda\)\textsubscript{max} / nm \(n \longrightarrow \pi^\ast\) \(\pi \longrightarrow \pi^\ast\) \\
 \midrule
 \endhead
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-217\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-270 187\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-227\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-\includegraphics{images/octatrienestructure.png}\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-263\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-324 219\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\raggedright
-\includegraphics{images/longene.png}\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-353\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
+& 217 & & 270 187 \\
+& 227 & & \\
+\includegraphics{images/octatrienestructure.png} & 263 & & 324 219 \\
+\includegraphics{images/longene.png} & 353 & & \\
 \bottomrule
 \end{longtable}
 
@@ -542,19 +511,19 @@ Interestingly, permanganate which is relatively highly coloured when compared to
 \begin{longtable}[]{@{}lll@{}}
 \caption{\label{tab:extcoeff} The molar extinction coefficients of a range of molecules, the magnitude is strongly dependent upon the adherence to selection rules, the two organic molecules, DNA bases \& TOTO-1 are both `spin allowed', permanganate is a LMCT which has no selection rules, whereas the final three molecules all fall foul of the Laporte selection rule which states \(\Delta l = \pm 1\). Since these transitions are `forbidden' the molar extinction coefficient is considerably lower than the allowed transitions.}\tabularnewline
 \toprule
-& \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1}\tabularnewline
+& \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1} \\
 \midrule
 \endfirsthead
 \toprule
-& \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1}\tabularnewline
+& \(\lambda\)\textsubscript{max} / nm & \(\varepsilon _{\lambda}\) / M\textsuperscript{-1} cm\textsuperscript{-1} \\
 \midrule
 \endhead
-DNA (per base) & 260 & 6600\tabularnewline
-TOTO-1 & 514 & 117000\tabularnewline
-KMnO\textsubscript{4} & 520 & 1800\tabularnewline
-CuSO\textsubscript{4} & 810 & 20\tabularnewline
-{[}Ti(H\textsubscript{2}O)\textsubscript{6}{]}\textsuperscript{3+} & 500 & 6.1\tabularnewline
-PrCl\textsubscript{3} & 445 & 0.07\tabularnewline
+DNA (per base) & 260 & 6600 \\
+TOTO-1 & 514 & 117000 \\
+KMnO\textsubscript{4} & 520 & 1800 \\
+CuSO\textsubscript{4} & 810 & 20 \\
+{[}Ti(H\textsubscript{2}O)\textsubscript{6}{]}\textsuperscript{3+} & 500 & 6.1 \\
+PrCl\textsubscript{3} & 445 & 0.07 \\
 \bottomrule
 \end{longtable}
 
@@ -674,8 +643,11 @@ To support the material in this section it is suggested you read chapter 2 of Wa
 \hypertarget{ch:Workshop1}{%
 \chapter{Workshop Questions for Week 2 Absorption}\label{ch:Workshop1}}
 
-\hypertarget{sec:BeerLambertSAQ}{%
-\section{Short mathematical question - Beer Lambert law}\label{sec:BeerLambertSAQ}}
+\hypertarget{sec:absquestions}{%
+\section{Questions}\label{sec:absquestions}}
+
+\hypertarget{subsec:BeerLambertSAQ}{%
+\subsection{Short mathematical question - Beer Lambert law}\label{subsec:BeerLambertSAQ}}
 
 \begin{itemize}
 \tightlist
@@ -685,8 +657,8 @@ To support the material in this section it is suggested you read chapter 2 of Wa
 
 \emph{(I will use MCQs and UniDoodle to ask this in class)}
 
-\hypertarget{sec:MolarExtinction}{%
-\section{Short conceptual question - molar extinction coefficient}\label{sec:MolarExtinction}}
+\hypertarget{subsec:MolarExtinction}{%
+\subsection{Short conceptual question - molar extinction coefficient}\label{subsec:MolarExtinction}}
 
 \begin{itemize}
 \tightlist
@@ -705,8 +677,8 @@ To support the material in this section it is suggested you read chapter 2 of Wa
 
 \emph{(I will use UniDoodle's drawing feature to ask this in class)}
 
-\hypertarget{sec:intensity}{%
-\section{Short conceptual question - intensity of colour}\label{sec:intensity}}
+\hypertarget{subsec:intensity}{%
+\subsection{Short conceptual question - intensity of colour}\label{subsec:intensity}}
 
 \begin{itemize}
 \tightlist
@@ -734,8 +706,8 @@ To support the material in this section it is suggested you read chapter 2 of Wa
 
 \emph{(This will be a discussion question)}
 
-\hypertarget{sec:linewidth}{%
-\section{Short conceptual question - line width}\label{sec:linewidth}}
+\hypertarget{subsec:linewidth}{%
+\subsection{Short conceptual question - line width}\label{subsec:linewidth}}
 
 \begin{itemize}
 \tightlist
@@ -765,8 +737,8 @@ You will need to look at the x-scale to truley note the difference in the width 
 
 \emph{(This will be a discussion question)}
 
-\hypertarget{sec:solvationabs}{%
-\section{Short conceptual question - the effect of solvation on absorbance}\label{sec:solvationabs}}
+\hypertarget{subsec:solvationabs}{%
+\subsection{Short conceptual question - the effect of solvation on absorbance}\label{subsec:solvationabs}}
 
 \begin{figure}
 
@@ -787,8 +759,8 @@ Think about the effect of solvation on the energy levels and why those energy le
 
 \emph{(This will be a discussion question)}
 
-\hypertarget{sec:Azobenzene}{%
-\section{Extended question - Azobenzene}\label{sec:Azobenzene}}
+\hypertarget{subsec:Azobenzene}{%
+\subsection{Extended question - Azobenzene}\label{subsec:Azobenzene}}
 
 Azobenzene undergoes the following cis-trans isomerisation, the isomerisation occurs in the ps timescale.
 
@@ -813,15 +785,15 @@ Azobenzene undergoes the following cis-trans isomerisation, the isomerisation oc
 \begin{longtable}[]{@{}lll@{}}
 \caption{\label{tab:azobenzeneabs} The molar extinction coefficient of the two isomers of azobenzene.}\tabularnewline
 \toprule
-& ε\textsubscript{360} / M\textsuperscript{−1} cm\textsuperscript{−1} & ε\textsubscript{460} / M\textsuperscript{−1} cm\textsuperscript{−1}\tabularnewline
+& ε\textsubscript{360} / M\textsuperscript{−1} cm\textsuperscript{−1} & ε\textsubscript{460} / M\textsuperscript{−1} cm\textsuperscript{−1} \\
 \midrule
 \endfirsthead
 \toprule
-& ε\textsubscript{360} / M\textsuperscript{−1} cm\textsuperscript{−1} & ε\textsubscript{460} / M\textsuperscript{−1} cm\textsuperscript{−1}\tabularnewline
+& ε\textsubscript{360} / M\textsuperscript{−1} cm\textsuperscript{−1} & ε\textsubscript{460} / M\textsuperscript{−1} cm\textsuperscript{−1} \\
 \midrule
 \endhead
-trans-azobenzene & 22000 & 4500\tabularnewline
-cis-azobenzene & 2100 & 5500\tabularnewline
+trans-azobenzene & 22000 & 4500 \\
+cis-azobenzene & 2100 & 5500 \\
 \bottomrule
 \end{longtable}
 
@@ -842,6 +814,181 @@ cis-azobenzene & 2100 & 5500\tabularnewline
 \end{figure}
 
 \emph{(This will be a discussion question)}
+
+\hypertarget{sec:absans}{%
+\section{Answers}\label{sec:absans}}
+
+\hypertarget{subsec:BeerLambertans}{%
+\subsection{Short mathematical question - Beer Lambert law}\label{subsec:BeerLambertans}}
+
+- \emph{How far can monochromatic 489 nm light travel through a 0.100 M solution of fluorescein with an extinction coefficient at 489 nm of 92000 M\textsuperscript{−1} cm\textsuperscript{−1} before 90 \% of it is absorbed?}
+
+If 90\% of the incident light is being absorbed then 10\% of the light is transmitted\ldots{}
+
+The Beer-Lambert law is (Equation \eqref{eq:BeerLambert}):
+
+\begin{equation}
+\log{\frac{I}{I_0}}=-\varepsilon c l
+\label{eq:BeerLambert}
+\end{equation}
+
+rearranging this:
+
+\begin{equation*}
+l = \frac{\log{\frac{I_0}{I}}}{\varepsilon c}
+\end{equation*}
+
+\begin{equation*}
+l = \frac{\log{\frac{100 \%}{10 \%}}}{92000 \textrm{ M}^{-1} \textrm{ cm}^{-1} \times 0.100 \textrm{ M}}
+\end{equation*}
+
+\begin{equation*}
+l = \frac{1}{9200000 \textrm{ M}^{-1} \textrm{ m}^{-1} \times 0.100 \textrm{ M}}
+\end{equation*}
+
+\begin{equation*}
+l = 1.0 \textrm{ μm}
+\end{equation*}
+
+\hypertarget{subsec:MolarExtinctionans}{%
+\subsection{Short conceptual question - molar extinction coefficient}\label{subsec:MolarExtinctionans}}
+
+\emph{- Modify the molecule in figure \ref{fig:bpy1} to increase the molar extinction coefficient (do not worry about what may happen to wavelength).}
+
+\emph{Image may be found in Section \ref{subsec:MolarExtinction}}
+
+If a molecule is rigid the difference between the ground and excited state structure is smaller and this usually leads to a higher molar extinction coefficient, so any structural changes which increase this rigidity will likely lead to a higher molar extinction coefficient.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/structurealts} 
+
+}
+
+\caption{Two possible modifications of bpy, the stilbene derivative on teh left has a very different ground and excited state structure due to the possible rotations around the two conjucated single bonds, the phenantroline modificaiton on the right does not allow much deviation in structure and so the excited state is only bent as the bond order is reduced leading to a larger overlap integral.}\label{fig:bpyalts}
+\end{figure}
+
+Excitation of an electron from a bonding or non-bonding orbital into an anti-bonding orbital reduces the bond order, and will `kink' aromatic systems.
+
+\hypertarget{subsec:intensityans}{%
+\subsection{Short conceptual question - intensity of colour}\label{subsec:intensityans}}
+
+\emph{- What factors influence the `intensity of colour' of the following solutions?}
+
+\emph{Images may be found in Section \ref{subsec:intensity}}
+
+CuSO\textsubscript{4} in solution forms the hexa aqua complex listed in figure \ref{fig:molarextstructures}. This is a centrosymmetric molecule which therefore runs foul of the Laporte selection rule which says that ``allowed transitions in centrosymmetric molecules must involve a change in parity''. So either g → u or u → g are allowed, and g → g and u → u are forbidden.
+
+You will not be expected to work out symetry types for orbitals but can `back justify' to explain with this.
+
+These symmetry labels appear on the energy level diagram for CU\textsuperscript{2+} (figure \ref{fig:Cu}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/CuIIenergylevels} 
+
+}
+
+\caption{The splitting of the d-orbitals in octahedral Cu2+, the transition is between the HOMO t2g level and the PUMO eg level. The subscript g on each of these orbitals is a symmetry label indicating there is no change or parity and so the transition is Laporte forbidden.}\label{fig:Cu}
+\end{figure}
+
+Both of the split energy levels are gerade (g) and so there is no change of parity for the transition from t\textsubscript{2g} to e\textsubscript{g}, therefore the transition is selection rule forbidden and has a low molar extinction coefficient. The `breaking of symmetry' by possible rotamers of the water ligands mean this value is higher than for the gas phase atomic molar absorption coefficient. The maximum molar extinction coefficient of copper sulfate solutions is around 20 M\textsuperscript{-1} cm\textsuperscript{-1}.
+
+The permanganate (MnO\textsubscript{4}\textsuperscript{-}) is a ligand to metal charge transfer transition, since excitation of an electron effectively moves an electron from one of the oxygen ligands to the manganese `empty' metal centre there is no limitation from the spin selection rule and the complex is not subject to the Laporte selection rule. This leads to moderate to `high' molar extinction coefficients. The maximum molar extinction coefficient of potassium permanganate solutions is around 1800 M\textsuperscript{-1} cm\textsuperscript{-1}.
+
+The final molecule is the synthetic dye methylene blue, this is not centrosymmetric and so is not subject to the Laporte selectrion rule, further the structure with fused aromatic rings and a large amount of conjugation is fairly rigid and so there is a large overlap of the wavefunctions of the ground and excited state. The maximum molar extinction coefficient of methylene blue solutions is around 75000 M\textsuperscript{-1} cm\textsuperscript{-1}.
+
+\hypertarget{subsec:linewidthans}{%
+\subsection{Short conceptual question - line width}\label{subsec:linewidthans}}
+
+- \emph{Why are some spectra very broad (figure \ref{fig:molecular}), whereas others have sharp peaks (figure \ref{fig:atomic})?}
+
+\emph{You will need to look at the x-scale to truley note the difference in the width of these emission spectra.}
+
+\emph{Images may be found in Section \ref{subsec:linewidth}}
+
+We are looking at two very different spectra here, first off we have an atomic transition and a molecular transition. Secondly one is solvated, the other in the gas (or more acurately plasma) phase. Both of these factors are important\ldots{}
+
+When we have a transition for either absorption or emission then on an atomic level those energy levels are incredibly well defined, this leads to the energy required to promote an electron between these levels to be equally well defined.
+
+As soon as we solvate this the energy of the occupied (HOMO) is softened as intermolecular interactions will stabilise this level to different amounts, solvation may also allow previously absolutely parity forbidden processes to occur.
+
+The molecular spectrum is much broader because each of the possible rotamers, vibratamers and isomers has a slightly different energy, the myriad possible energies are expanded still by solvation and tempeature effects. The more possible structural isomers and rotamers the `softer' any defining features in the spectrum. For example if we compare the rhodamine spectum (figure \ref{fig:molecular}) to that of antracene (figure \ref{fig:anthracene}) we can see that there is more `fine structure' in the anthracene spectrum, this is because of the smaller possible number of structural variations, there are no possible rotamers and so transitions are more defined.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/anthracene} 
+
+}
+
+\caption{The absorption and emission spectra of anthracene indicating fine structure in the spectrum}\label{fig:anthracene}
+\end{figure}
+
+\hypertarget{subsec:solvationabsans}{%
+\subsection{Short conceptual question - the effect of solvation on absorbance}\label{subsec:solvationabsans}}
+
+\emph{Image may be found in Section \ref{subsec:solvationabs}}
+
+- \emph{Why does the observed colour of ethidium bromide depend upon the solvent (figure \ref{fig:ethidium}))?}
+
+\emph{Think about the effect of solvation on the energy levels and why those energy levels matter! Remember that if light is transmitted through a solution that is the colour we observe\ldots{}}
+
+This is in essence answering the same question as in question \ref{sec:linewidth}, solvation affects the energy levels of occupied orbitals.WIthout going into any more detail than essential the different solvents stabilise the HOMO of ethidium bromide different amounts - this is likely due to different hydrogen bonding of the alchols. The more stabilised the ground state the bigger the energy gap leading to a blue shift in the absorption spectra. The orange solution is absorbing blue light (λ\textsubscript{max} = 480 nm) and the purple solution absorbing orange (λ\textsubscript{max} = 550 nm) indicating the energy gap of the aquous solution is larger and therefore the solvent stabilisation is biggest.
+
+It is worth noting that the energy of `empty' orbitals is unaffected and so the energy of the LUMO is unchanged (figure \ref{fig:solvato}).
+
+\emph{Figure above in Section \ref{subsec:solvationabs}}
+
+\hypertarget{subsec:Azobenzeneans}{%
+\subsection{Extended question - Azobenzene}\label{subsec:Azobenzeneans}}
+
+\emph{Azobenzene undergoes the following cis-trans isomerisation, the isomerisation occurs in the ps timescale.}
+
+\emph{Image may be found in Section \ref{subsec:Azobenzene}}
+
+- \emph{Why would you expect the absorption spectrum of each isomer to be different?}
+
+Trans azobenzene is centrosymmetric and so is subject to the Laporte selection rule, cis azobenzene is non-centrosymmetric and so it is not parity forbidden. Consequently the HOMO-LUMO transition which is allowed for the cis is forbidden for the trans and so the absorbance spectra is different.
+
+- \emph{Suggest why the trans conformation is more stable than the cis isomer.}
+
+Steric hinderance will mean that the cis-isomer is not planar, if it isn't planar it isn't fully conjugated, and if it isn't fully conjugated it isn't as stable. There is no steric hinderance in the trans isomer.
+
+- \emph{Use the following data to predict the proportion of each isomer under 360 nm excitation.}
+
+\emph{Table: \label{tab:azobenzeneabs} The molar extinction coefficient of the two isomers of azobenzene.}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+& ε\textsubscript{360} / M\textsuperscript{−1} cm\textsuperscript{−1} & ε\textsubscript{460} / M\textsuperscript{−1} cm\textsuperscript{−1} \\
+\midrule
+\endhead
+trans-azobenzene & 22000 & 4500 \\
+cis-azobenzene & 2100 & 5500 \\
+\bottomrule
+\end{longtable}
+
+For the photostationary state the absorbance of the two isomers will be the same.
+
+The excited state for both molecules will be the same, and the probability of the excited state decaying into any given isomer is the same.
+
+So if \(A =\varepsilon cl\) and \(A_{trans}=A_{cis}\) then at 360 nm:
+
+\begin{equation*}
+\varepsilon_{trans} c_{trans} = \varepsilon_{cis} c_{cis}
+\end{equation*}
+
+\(c_{trans}= 0.095 c_{cis}\)
+
+- \emph{Would there be more or less trans azobenzene at 460 nm? Justify your answer.}
+
+There would be more trans at the photostationary state when excited at 460 nm, this is because the relative ration of molar extinction coefficients favors formation of more of the trans isomer.
+
+- \emph{It has been suggested the 360 nm absorption is an S\textsubscript{0} → S\textsubscript{2} absorption, and the 460 nm band is an S\textsubscript{0} → S\textsubscript{1} absorption. Suggest which energy levels are involved for each of the two transitions and compare it to stilbene which has a similar structure, but the cis and trans absorptions are 280 \& 295 nm respectively.}
+
+\emph{Image may be found in Section \ref{subsec:Azobenzene}}
+
+Azobenzene has \(n\), \(\pi\) and \(\pi^*\) orbitals whereas stilbene only has \(\pi\) and \(\pi^*\) orbitals. Given the different orbital types available in azobenzene the expectation that the transitions will have a wider energy spacing than in stilbene where we just have the bonding and antibonding \(pi\) set, and so we would expect these energy levels to be more closely spaced.
 
 \hypertarget{ch:Em}{%
 \chapter{Emission of Light}\label{ch:Em}}
@@ -869,6 +1016,10 @@ At the end of this block you should be able to:
 \end{itemize}
 
 Only the light absorbed by a molecule can produce photochemical change in a molecule. If a species absorbs radiation then one particle is excited for each quantum of radiation absorbed. This concept of light having to be absorbed before anything else can happen is an obvious one, but is an important concept in itself, it goes on to define the concept of quantum yield of a process, effectively the proportion of excited states which `decay' to any given pathway.
+
+The reaction coordinate, which appears on our x axis of any plot with potential wells, is essentially a measure of the net difference between the wavefunction of ground and excited state, the bigger the difference the bigger the offset on the reaction coordinate axis.
+
+Wavefunctions are hard to visualise though, and so we may also consider it the sum of the net difference in position of every atom between the ground and excited state, the bigger the structural change, the bigger the difference in wavefunction, and so the bigger the offset on the reaction coordinate axis.
 
 \hypertarget{sec:FluorPhos}{%
 \section{Fluorescence \& Phosphorescence}\label{sec:FluorPhos}}
@@ -898,66 +1049,27 @@ Emission transitions that involve a change in spin of the electron, such as from
 
 Table \ref{tab:phototrans} the deactivation pathways from excited states:
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.43}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.29}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.29}}@{}}
 \caption{\label{tab:phototrans} The excitation and decay pathways in molecules.}\tabularnewline
 \toprule
+& & \\
+\midrule
+\endfirsthead
+\toprule
+& & \\
+\midrule
 \endhead
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-\emph{`Allowed transitions'}\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-Singlet-singlet absorption Singlet-singlet emission\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-fluorescence\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\(S_0 + h \nu \longrightarrow S_1\) \(S_1 \longrightarrow S_0 + h \nu '\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-\emph{`Forbidden transitions'}\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-Singlet-triplet absorption Triplet-singlet emission\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-fluorescence\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\(S_0 + h \nu \longrightarrow T_1\) \(T_1 \longrightarrow S_0 + h \nu ''\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-\emph{`Other transitions'}\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-Internal conversion \strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-(vibrational relaxation) (vibrational relaxation)\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\(S_1 \longrightarrow S_0 + heat\) \(S_1 \longrightarrow T_1 + heat\) \(T_1 \longrightarrow S_0 + heat\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-\emph{Other pathways}\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.39\columnwidth}\raggedright
-Quenching of excited state Chemistry from excited state\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.26\columnwidth}\raggedright
-\(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(S_1 \longrightarrow\) new/changed molecule\strut
-\end{minipage}\tabularnewline
+\emph{`Allowed transitions'} & & \\
+Singlet-singlet absorption Singlet-singlet emission & fluorescence & \(S_0 + h \nu \longrightarrow S_1\) \(S_1 \longrightarrow S_0 + h \nu '\) \\
+\emph{`Forbidden transitions'} & & \\
+Singlet-triplet absorption Triplet-singlet emission & fluorescence & \(S_0 + h \nu \longrightarrow T_1\) \(T_1 \longrightarrow S_0 + h \nu ''\) \\
+\emph{`Other transitions'} & & \\
+Internal conversion & (vibrational relaxation) (vibrational relaxation) & \(S_1 \longrightarrow S_0 + heat\) \(S_1 \longrightarrow T_1 + heat\) \(T_1 \longrightarrow S_0 + heat\) \\
+\emph{Other pathways} & & \\
+Quenching of excited state Chemistry from excited state & & \(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(S_1 \longrightarrow\) new/changed molecule \\
 \bottomrule
 \end{longtable}
 
@@ -1053,86 +1165,26 @@ If there is more than one possible deactivation pathway from the excited state i
 \label{eq:QYdef}
 \end{equation}
 
-\begin{longtable}[]{@{}llll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.38}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.27}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.18}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.18}}@{}}
 \caption{\label{tab:QYtab} The deactivation pathways of an excited state, with the associated rate constants and quantum yields.}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.33\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-Rate of Process\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-Quantum Yield\strut
-\end{minipage}\tabularnewline
+& & Rate of Process & Quantum Yield \\
 \midrule
 \endfirsthead
 \toprule
-\begin{minipage}[b]{0.33\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.24\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-Rate of Process\strut
-\end{minipage} & \begin{minipage}[b]{0.16\columnwidth}\raggedright
-Quantum Yield\strut
-\end{minipage}\tabularnewline
+& & Rate of Process & Quantum Yield \\
 \midrule
 \endhead
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Absorption\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(S_0 + h \nu \longrightarrow S_1\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(I\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Fluorescence\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(S_1 \longrightarrow S_0 + h \nu'\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_f[S_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _f\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Internal conversion\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(S_1 \longrightarrow S_0 + \textrm{heat}\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_{ic}[S_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _{ic}\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Intersystem crossing \emph{singlet to triplet}\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(S_1 \longrightarrow T_1 + \textrm{heat}\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_{ST}[S_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _{ST}\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Phosphorescence\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(T_1 \longrightarrow S_0 + h \nu''\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_p[T_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _p\)\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.33\columnwidth}\raggedright
-Intersystem crossing \emph{internal conversion triplet to singlet}\strut
-\end{minipage} & \begin{minipage}[t]{0.24\columnwidth}\raggedright
-\(T_1 \longrightarrow S_0 + \textrm{heat}\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(k_{TS}[T_1]\)\strut
-\end{minipage} & \begin{minipage}[t]{0.16\columnwidth}\raggedright
-\(\phi _{TS}\)\strut
-\end{minipage}\tabularnewline
+Absorption & \(S_0 + h \nu \longrightarrow S_1\) & \(I\) & \\
+Fluorescence & \(S_1 \longrightarrow S_0 + h \nu'\) & \(k_f[S_1]\) & \(\phi _f\) \\
+Internal conversion & \(S_1 \longrightarrow S_0 + \textrm{heat}\) & \(k_{ic}[S_1]\) & \(\phi _{ic}\) \\
+Intersystem crossing \emph{singlet to triplet} & \(S_1 \longrightarrow T_1 + \textrm{heat}\) & \(k_{ST}[S_1]\) & \(\phi _{ST}\) \\
+Phosphorescence & \(T_1 \longrightarrow S_0 + h \nu''\) & \(k_p[T_1]\) & \(\phi _p\) \\
+Intersystem crossing \emph{internal conversion triplet to singlet} & \(T_1 \longrightarrow S_0 + \textrm{heat}\) & \(k_{TS}[T_1]\) & \(\phi _{TS}\) \\
 \bottomrule
 \end{longtable}
 
@@ -1177,17 +1229,17 @@ The integrated emission intensity, \(\int{I}\textrm{d}\bar \nu\), of the unknown
 \begin{longtable}[]{@{}lllll@{}}
 \caption{\label{tab:actinometer} The photophysical details of well characterised actinometers.}\tabularnewline
 \toprule
-Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm\tabularnewline
+Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm \\
 \midrule
 \endfirsthead
 \toprule
-Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm\tabularnewline
+Reference & Solvent & λ\textsubscript{ex}/nm & Φ\textsubscript{em} & λ\textsubscript{em,max} / nm \\
 \midrule
 \endhead
-quinine sulfate & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 350 & 0.577 & 444\tabularnewline
-fluorescein & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 496 & 0.95 & 521\tabularnewline
-rhodamine 6G & ethanol & 488 & 0.94 & 530\tabularnewline
-cresyl violet & methanol & 540 & 0.54 & 622\tabularnewline
+quinine sulfate & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 350 & 0.577 & 444 \\
+fluorescein & 0.1 M H\textsubscript{2}SO\textsubscript{4} & 496 & 0.95 & 521 \\
+rhodamine 6G & ethanol & 488 & 0.94 & 530 \\
+cresyl violet & methanol & 540 & 0.54 & 622 \\
 \bottomrule
 \end{longtable}
 
@@ -1226,22 +1278,29 @@ To support the material in this section it is suggested you read chapters 3 \& 4
 \hypertarget{ch:Workshop2}{%
 \chapter{Workshop Questions for Week 3}\label{ch:Workshop2}}
 
+\hypertarget{sec:fluorescencequestions}{%
+\section{Questions}\label{sec:fluorescencequestions}}
+
 \hypertarget{sec:YieldLifetime}{%
-\section{Short mathematical question - Quantum Yield and lifetime}\label{sec:YieldLifetime}}
+\subsection{Short mathematical question - Quantum Yield and lifetime}\label{sec:YieldLifetime}}
 
 The quantum yield and lifetime of a dye were measured to be 0.43 \& 2.6 ns respectively. What is the natural lifetime?
 
 \emph{(I will use MCQs and UniDoodle to ask this in class)}
 
+You can find the answer to this question in \ref{sec:YieldLifetimeans}
+
 \hypertarget{sec:otherprocesses}{%
-\section{Short conceptual question - Effect of other processes}\label{sec:otherprocesses}}
+\subsection{Short conceptual question - Effect of other processes}\label{sec:otherprocesses}}
 
 For a given value of τ\textsubscript{0} what happens to the lifetime and quantum yield as k\textsubscript{IC} and k\textsubscript{ISC} increases?
 
 \emph{(This will be a discussion question)}
 
+You can find the answer to this question in \ref{sec:otherprocessesans}
+
 \hypertarget{sec:structure}{%
-\section{Conceptual question - Effect of structure}\label{sec:structure}}
+\subsection{Conceptual question - Effect of structure}\label{sec:structure}}
 
 Fluorescein (figure \ref{fig:fluorescein}) in basic aqueous solution has a quantum yield of fluorescence, Φ\textsubscript{f}, of 0.95, and fluorescence lifetime, τ\textsubscript{f}, of 4.1 ns.
 
@@ -1256,8 +1315,10 @@ Fluorescein (figure \ref{fig:fluorescein}) in basic aqueous solution has a quant
 
 \emph{(This will be a discussion question)}
 
-\hypertarget{conceptual-question---lack-of-symmetry-in-spectra.}{%
-\section{Conceptual question - lack of symmetry in spectra.}\label{conceptual-question---lack-of-symmetry-in-spectra.}}
+You can find the answer to this question in \ref{sec:structureans}
+
+\hypertarget{sec:symmetryspec}{%
+\subsection{Conceptual question - lack of symmetry in spectra}\label{sec:symmetryspec}}
 
 The absorption and emission spectrum of fluorescein is shown in figure (\ref{fig:fluoresceinspec})
 
@@ -1272,8 +1333,10 @@ The absorption and emission spectrum of fluorescein is shown in figure (\ref{fig
 
 Why are the absorption bands between 200 -- 350 nm not reflected in the emission spectrum?
 
+You can find the answer to this question in \ref{sec:symmetryspecans}
+
 \hypertarget{sec:stokes}{%
-\section{Conceptual question - Stokes' shift}\label{sec:stokes}}
+\subsection{Conceptual question - Stokes' shift}\label{sec:stokes}}
 
 The inorganic dye {[}Ru(bpy)\textsubscript{3}{]}\textsuperscript{2+} has a measured lifetime in water of 580 ns and a natural lifetime of 13.8 µs. The spectrum is shown in figure \ref{fig:Rubpyspec}. What is the origin of the large Stokes' shift in this system?
 
@@ -1288,8 +1351,10 @@ The inorganic dye {[}Ru(bpy)\textsubscript{3}{]}\textsuperscript{2+} has a measu
 
 Data from Shi \emph{et al.}, Synthesis and characterization of phosphorescent two coordinate copper(I) complexes bearing diamidocarbene ligands. \href{https://doi.org/10.1039/C6DT04016K}{Dalton Trans., 2017,46, 745-752.}
 
+You can find the answer to this question in \ref{sec:stokesans}
+
 \hypertarget{sec:binding}{%
-\section{Conceptual question - the effect of binding on emission}\label{sec:binding}}
+\subsection{Conceptual question - the effect of binding on emission}\label{sec:binding}}
 
 The asymmetric cyanine dye YO-Pro-1 is a DNA stain because it has a large increase on fluorescence emission when binding to DNA. The lifetime in free solution is around 2 ps and when bound to DNA is 2.4 ns. What is the structural origin of the large increase of emission upon binding?
 
@@ -1304,8 +1369,10 @@ The asymmetric cyanine dye YO-Pro-1 is a DNA stain because it has a large increa
 
 \emph{(This will be a discussion question)}
 
-\hypertarget{extended-question---properties-of-ethidium-bromide-example-exam-question}{%
-\section{Extended question - Properties of Ethidium Bromide (Example Exam Question)}\label{extended-question---properties-of-ethidium-bromide-example-exam-question}}
+You can find the answer to this question in \ref{sec:bindingans}
+
+\hypertarget{sec:examethidium}{%
+\subsection{Extended question - Properties of Ethidium Bromide (Example Exam Question)}\label{sec:examethidium}}
 
 Ethidium bromide (EB, figure \ref{fig:ethidiumstructure} is used as a DNA stain, which is essentially non-fluorescent in aqueous solution, but shows a strong enhancement of emission upon binding to double stranded DNA (which has a negatively charged backbone).
 
@@ -1332,17 +1399,17 @@ The following spectra, lifetimes and quantum yield have been measured for EB in 
 \begin{longtable}[]{@{}lll@{}}
 \caption{\label{tab:ethidiumlifetime} The lifetimes and quantum yields of ethidium bromide in aquous solution and when bound to DNA in protiated and deuterated systems.}\tabularnewline
 \toprule
-& τ / ns & Φ\textsubscript{f}\tabularnewline
+& τ / ns & Φ\textsubscript{f} \\
 \midrule
 \endfirsthead
 \toprule
-& τ / ns & Φ\textsubscript{f}\tabularnewline
+& τ / ns & Φ\textsubscript{f} \\
 \midrule
 \endhead
-H\textsubscript{2}O (no DNA) & 1.6 & 0.012\tabularnewline
-D\textsubscript{2}O (no DNA) & 6.3 &\tabularnewline
-DNA & 28.3 & 0.220\tabularnewline
-DNA (deuterated) & 38.4 &\tabularnewline
+H\textsubscript{2}O (no DNA) & 1.6 & 0.012 \\
+D\textsubscript{2}O (no DNA) & 6.3 & \\
+DNA & 28.3 & 0.220 \\
+DNA (deuterated) & 38.4 & \\
 \bottomrule
 \end{longtable}
 
@@ -1383,14 +1450,186 @@ A study of the thermodynamics of the dye DNA system measured the binding constan
   Why would increasing the ionic strength of the solution, increase the fluorescence intensity of EB in solution with DNA?
 \end{itemize}
 
-\hypertarget{short-conceptual-question---effect-of-polar-solvents-on-emission}{%
-\section{Short conceptual question - effect of polar solvents on emission}\label{short-conceptual-question---effect-of-polar-solvents-on-emission}}
+You can find the answer to this question in \ref{sec:examethidiumans}
 
-Solutions containing anthracence and diethylaniline are shown to have broad emission at around 450 nm in toluene, but in dichloromethane no emission is observed.
+\hypertarget{sec:fluorescenceanswers}{%
+\section{Answers}\label{sec:fluorescenceanswers}}
 
-The emission from athracene has λ\textsubscript{max} of 375 nm.
+\hypertarget{sec:YieldLifetimeans}{%
+\subsection{Short mathematical question - Quantum Yield and lifetime}\label{sec:YieldLifetimeans}}
 
-Suggest the processes going on which account for these observations.
+The fluorescence quantum yield (equation \eqref{eq:lifetimefluor} and fluorescence lifetime (equation \eqref{eq:lifetimefluor}) are related to the rate constants for the different decay processes.
+
+\begin{equation}
+\phi_f = \frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\label{eq:QYfluor}
+\end{equation}
+
+\begin{equation}
+\tau_f = \frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\label{eq:lifetimefluor}
+\end{equation}
+
+The natural lifetime is the lifetime when the only decay pathway is fluorescence emission (equation \eqref{eq:natural}).
+
+\begin{equation}
+\tau_f^0 = \frac{1}{k_f^0}
+\label{eq:natural}
+\end{equation}
+
+Combining equations \eqref{eq:QYfluor} and \eqref{eq:lifetimefluor}:
+
+\begin{equation*}
+\frac{\tau_f}{\phi_f}=\frac{\frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}{\frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}=\frac{1}{k_f^0}=\tau_f^0
+\end{equation*}
+
+Consequently \(\tau_f^0 = \frac{\tau_f}{\phi_f}=\frac{2.6}{0.43}= 6.0\) ns
+
+\hypertarget{sec:otherprocessesans}{%
+\subsection{Short conceptual question - Effect of other processes}\label{sec:otherprocessesans}}
+
+If \(k_f^0\) is fixed (which it is for a given chromophore) then as we adjust the other rate constants in equation \eqref{eq:lifetimefluor} the emission lifetime (the time it takes for the intensity to reduce to 1/e of the initial intensity) decreases, as shown in figure \ref{fig:rateslifetime}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/rateslifetime} 
+
+}
+
+\caption{The variation of the emission lifetime (the time it takes to decay to 1/e of the initial concentration, for a constant rate of fluorescence emission but increasing rates of non-radiative decay.}\label{fig:rateslifetime}
+\end{figure}
+
+\hypertarget{sec:structureans}{%
+\subsection{Conceptual question - Effect of structure}\label{sec:structureans}}
+
+The only things that affect the quantum yield and lifetime (equations \eqref{eq:lifetimefluor} and \eqref{eq:lifetimefluor}) are the different rate constants involved. The quantum yield is a measure of the proportion of excited states which decay by each pathway.
+
+Therefore if the quantum yield of fluorescence is near unity then neither the rate of intersystem crossing or internal conversion is large. Intersystem crossing may occur due to the change in orbital type offered, but given the lack of heavy atoms this rate is unlikely to be high and will probably be a negligable proprortion given the high rates of other processes.
+
+The rate of intersystem crossing is more efficient for rotations than vibrations (due to the closwer spacing of rotational energy levels), therefore if rotations can occur the rate of internal conversion tends to be quite high. In this case there is only one likely bond that could rotate to loose the excited state of the system. This is the single bond linking the two ring systems. Rotation around this bond is severly inhibited though due to the presence of the acid group which restricts rotation.
+
+Please note that it is rotations around bonds that cross the conjugation within the molecule that allow for the most efficient energy loss.
+
+\hypertarget{sec:symmetryspecans}{%
+\subsection{Conceptual question - lack of symmetry in spectra}\label{sec:symmetryspecans}}
+
+Kasha's rule states \emph{"An excited state always emits from the lowest energy level of that spin multiplicity state.} Consequently we can excite into any available orbital, but the excited state will rapidly decay into the lowest energy level of that multiplicity. So although we are exciting from S\textsubscript{0} into S\textsubscript{1}, S\textsubscript{2}, S\textsubscript{3}\ldots{} any excited state will rapidly decay by internal conversion down to the S\textsubscript{1} excited state and all emission will occur from this state.
+
+Kasha's rule is a consequence of the energy gap law which I alluded to when talking about the special case of azulene, but this will be covered in a video specifically talking about the energy gap law.
+
+\hypertarget{sec:stokesans}{%
+\subsection{Conceptual question - Stokes' shift}\label{sec:stokesans}}
+
+Firstly we need to separate two things - the first is just the origin of the Stokes' shift due to the transition of an electron occuring very quickly leaving an optimised state to occupy an unoptimised state, which later relaxes. A typical Stokes' shift is \textasciitilde20 nm, the Stokes' shift in this example is more than 150 nm\ldots{} why?
+
+If we consider the system that we have at hand, in this case {[}Ru(bpy)\textsubscript{3}{]}\textsuperscript{2+} we can note the HOMO-LUMO transition is an MLCT. This has a large difference in structure of the HOMO \& LUMO with a redistribution of charge which will also have a large effect on the arrangement of the solvent shell. Given this large difference in optimised structure there would be a large shift.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/RubpyMLCT} 
+
+}
+
+\caption{The HOMO (left) and LUMO (right) of ruthenium (II) tris bipyridine clearly showing the MLCT nature of the transition.}\label{fig:RubpyMLCT}
+\end{figure}
+
+However this isn't the only factor, the natural lifetime of 13.8 µs would indicate that the emission transition is phosphorescence, this spin forbidden transition has electrons alligned in parallel which is lower than the corresponding singlet state. So after excitation there is a change in multiplicity of the excited state, this lowers the energy of the system further moving the \(\lambda _{max}\) of emission to lower energy (longer wavelength).
+
+Data from Shi \emph{et al.}, Synthesis and characterization of phosphorescent two coordinate copper(I) complexes bearing diamidocarbene ligands. \href{https://doi.org/10.1039/C6DT04016K}{Dalton Trans., 2017,46, 745-752.}
+
+\hypertarget{sec:bindingans}{%
+\subsection{Conceptual question - the effect of binding on emission}\label{sec:bindingans}}
+
+The chromophore YO-Pro-1 has a methine bridge between the two halves of the chromophore, this offers efficient loss of the excited state \emph{via} internal conversion (see question \ref{sec:structure}. As noted earlier free rotation around a bond which cuts across the conjugation is particularly efficient in deactivating an excited state.
+
+If this pathway is inhibited by binding to the DNA (the dye intercalates between the base pairs but any dye DNA interaction would inhibit this mechanism of excited state decay) then the fluorescence lifetime will increase (equation \eqref{eq:lifetimefluor}).
+
+\hypertarget{sec:polarsolvans}{%
+\subsection{Short conceptual question - effect of polar solvents on emission}\label{sec:polarsolvans}}
+
+\hypertarget{sec:examethidiumans}{%
+\subsection{Extended question - Properties of Ethidium Bromide (Example Exam Question)}\label{sec:examethidiumans}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/Jablonski} 
+
+}
+
+\caption{A Jablonski diagram indicating the allowed transitions within the system, absorbance , internal conversion, intersystem crossing, fluorescence and phosphorescecne.}\label{fig:Jablonski2}
+\end{figure}
+
+If phosphorescecne occurs there must be some intersystem crossing in both directions.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+There is a rigid structure indicating a similar ground and excited state strucutre, which would lead to a good overlap integrals between the HOMO and LUMO. THe molar extinction coefficient is a measure of this overlap integral.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The chromophore single bond between the two halves of the chromophore, this offers efficient loss of the excited state \emph{via} internal conversion (see question \ref{sec:structure}. As noted earlier free rotation around a bond which cuts across the conjugation is particularly efficient in deactivating an excited state.
+
+If this pathway is inhibited by binding to the DNA (the dye intercalates between the base pairs but any dye DNA interaction would inhibit this mechanism of excited state decay) then the fluorescence lifetime will increase (equation \eqref{eq:lifetimefluor}).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{equation*}
+\phi_f = \frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\end{equation*}
+
+\begin{equation*}
+\tau_f = \frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}
+\end{equation*}
+
+The natural lifetime is the lifetime when the only decay pathway is fluorescence emission (equation \eqref{eq:natural}).
+
+\begin{equation*}
+\tau_f^0 = \frac{1}{k_f^0}
+\end{equation*}
+
+Combining equations \eqref{eq:lifetimefluor} and \eqref{eq:lifetimefluor}:
+
+\begin{equation*}
+\frac{\tau_f}{\phi_f}=\frac{\frac{1}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}{\frac{k_f^0}{k_f^0+k_{ic}+ k_{ST}+k_{\textrm{other}}}}=\frac{1}{k_f^0}=\tau_f^0
+\end{equation*}
+
+Consequently \(\tau_f^0 = \frac{\tau_f}{\phi_f}=\frac{1.6}{0.012}= 129\) ns
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+We are told the transition is fluorescence, but it has a very long natural lifetime. This long lifetime would indicate that despite the transition being selection rule allowed there is a structural explanation for the inefficiency of this process.
+
+This would indicate that there is now a poor overlap integral indcating a poor overlap of the excited state and ground state structures, or there is a large difference in the structures of the excited and ground states.
+
+This large difference in structure would be accounted for in the Stokes' shift - a large deviation in structure would lead to a larger energy loss upon the optimisation of the excited state.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The molecule has hetero atoms and so there will be both \(n-\pi*\) and \(\pi-\pi*\) transitions, the \(n-\pi*\) transitions will occur at lower energy (higher wavelength) and be the HOMO-LUMO transition.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Kasha's rule states \emph{An excited state always emits from the lowest energy level of that spin multiplicity state.} Consequently we can excite into any available orbital, but the excited state will rapidly decay into the lowest energy level of that multiplicity. So although we are exciting from S\textsubscript{0} into S\textsubscript{1}, S\textsubscript{2}, S\textsubscript{3}\ldots{} any excited state will rapidly decay by internal conversion down to the S\textsubscript{1} excited state and all emission will occur from this state.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Ultimately because it affects the rates of internal conversion, and so the lifetime is changed as described in equation @\ref(eq:lifetimefluor). We will learn more as to why when we cover the energy gap law.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+You would expect the emission lifetime and quantum yield to increase on freezing (as described in equation @\ref(eq:lifetimefluor)) as the efficiency (and therefore rate) of internal conversion mechanisms (particularly rotational relaxation) would be dramatically reduced in solid systems.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+This will be due to there being two states - one where the chromophore is bound, one where it is not. It is an equilibrium so not all dye will be bound to DNA. When not bound there is no fluorescence enhancement. The quantum yield we see is in fact a weighted average between the two states.
+
+This is a problem solving question and any reasonable attempt would have been given credit. It is demonstrating an ability to think about data and the problem in a scientific manner.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+This would push the equilibrium to form the dye:DNA complex increasing binding, as the binding increases the proportion of molecules displaying the higher quantum yield increases and the overall emission intensity of the sample increases.
+
+This is a problem solving question and any reasonable attempt would have been given credit. It is demonstrating an ability to think about data and the problem in a scientific manner.
 
 \hypertarget{ch:Quench}{%
 \chapter{Non-emmisive Deactivation of the Excited State}\label{ch:Quench}}
@@ -1426,16 +1665,16 @@ Non radiative decay become increasingly unfavourable as the energy gaps become b
 \begin{longtable}[]{@{}llllll@{}}
 \caption{\label{tab:actinometer} The lifetime of the excited state increases dramatically as the energy gap between the ground and excited state increases due to a decrease in internal conversion. The quantum yield of emission increases as the rate constant for internal conversion decreases..}\tabularnewline
 \toprule
-& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em}\tabularnewline
+& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em} \\
 \midrule
 \endfirsthead
 \toprule
-& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em}\tabularnewline
+& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ nw & Φ\textsubscript{em} \\
 \midrule
 \endhead
-{[}Os(phen)\textsubscript{3}{]}\textsuperscript{2+} & 650 & 720 & 0.186 & 260 & 0.016\tabularnewline
-{[}Os(phen)\textsubscript{2}(dppene){]}\textsuperscript{2+} & 455 & 609 & 0.69 & 1830 & 0.138\tabularnewline
-{[}Os(phen)(dppene)\textsubscript{2}{]}\textsuperscript{2+} & 400 & 530 & 0.761 & 3600 & 0.518\tabularnewline
+{[}Os(phen)\textsubscript{3}{]}\textsuperscript{2+} & 650 & 720 & 0.186 & 260 & 0.016 \\
+{[}Os(phen)\textsubscript{2}(dppene){]}\textsuperscript{2+} & 455 & 609 & 0.69 & 1830 & 0.138 \\
+{[}Os(phen)(dppene)\textsubscript{2}{]}\textsuperscript{2+} & 400 & 530 & 0.761 & 3600 & 0.518 \\
 \bottomrule
 \end{longtable}
 
@@ -1456,19 +1695,19 @@ Consequently intersystem crossing is considerably more efficient in molecules wh
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:rateST} The rates of intersystem crossing for a range of organic chromophores illustrating El Sayed's rule. When orbitals are listed as (for example) π,π* then it is looking at the pair of electrons in the highest orbitals (the valence HOMO electrons in the ground state), upon excitation an electron is excited from the π to the π* orbital.}\tabularnewline
 \toprule
-& transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1}\tabularnewline
+& transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1} \\
 \midrule
 \endfirsthead
 \toprule
-& transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1}\tabularnewline
+& transition & transition type & k\textsubscript{ST} / s\textsuperscript{−1} \\
 \midrule
 \endhead
-anthracene & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (π,π*) & forbidden & 1.4 × 10\textsuperscript{8}\tabularnewline
-acetone & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8}\tabularnewline
-benzil & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8}\tabularnewline
-biacetyl & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 7 × 10\textsuperscript{7}\tabularnewline
-9-acetoanthracence & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{10}\tabularnewline
-benzophenone & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{11}\tabularnewline
+anthracene & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (π,π*) & forbidden & 1.4 × 10\textsuperscript{8} \\
+acetone & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8} \\
+benzil & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 5 × 10\textsuperscript{8} \\
+biacetyl & S\textsubscript{1} (n,π*) ⟶ T\textsubscript{1} (n,π*) & forbidden & 7 × 10\textsuperscript{7} \\
+9-acetoanthracence & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{10} \\
+benzophenone & S\textsubscript{1} (π,π*) ⟶ T\textsubscript{1} (n,π*) & allowed & \textasciitilde10\textsuperscript{11} \\
 \bottomrule
 \end{longtable}
 
@@ -1479,19 +1718,15 @@ The photophysical deactivation pathways described above (emission, internal conv
 
 Table \ref{tab:phototrans}, part of which is repeated below, details all of the possible decay pathways from an excited state. Quenching competes with other processes, and consequently reduces the lifetime and yield of emission processes.
 
-\begin{longtable}[]{@{}ll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.60}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.40}}@{}}
 \toprule
+& \\
+\midrule
 \endhead
-\begin{minipage}[t]{0.56\columnwidth}\raggedright
-\emph{Other pathways}\strut
-\end{minipage} & \begin{minipage}[t]{0.38\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.56\columnwidth}\raggedright
-Quenching of excited state\strut
-\end{minipage} & \begin{minipage}[t]{0.38\columnwidth}\raggedright
-\(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\)\strut
-\end{minipage}\tabularnewline
+\emph{Other pathways} & \\
+Quenching of excited state & \(S_1 + Q \longrightarrow S_0 + Q +heat\) \(S_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \(T_1 + Q \longrightarrow S_0 + Q +heat\) \(T_1 + Q \longrightarrow S_0 + Q^\ast +heat\) \\
 \bottomrule
 \end{longtable}
 
@@ -1782,18 +2017,18 @@ A molecule decays by a combination of internal conversion, intersystem crossing 
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:smallmolQY} The quantum yields of various deactivation processes in small organic molecules measured at 77 K in a glass matrix.}\tabularnewline
 \toprule
-& Φ\textsubscript{f} & Φ\textsubscript{ST} & ΔE / kJ mol\textsuperscript{−1}\tabularnewline
+& Φ\textsubscript{f} & Φ\textsubscript{ST} & ΔE / kJ mol\textsuperscript{−1} \\
 \midrule
 \endfirsthead
 \toprule
-& Φ\textsubscript{f} & Φ\textsubscript{ST} & ΔE / kJ mol\textsuperscript{−1}\tabularnewline
+& Φ\textsubscript{f} & Φ\textsubscript{ST} & ΔE / kJ mol\textsuperscript{−1} \\
 \midrule
 \endhead
-Napthalene & 0.20 & 0.80 & 385\tabularnewline
-Anthracene & 0.70 & 0.30 & 318\tabularnewline
-Pyrene & 0.6 & low & 322\tabularnewline
-Tetracene & 0.1 & 0.65 & 251\tabularnewline
-Pentacene & 0.10 & 0.15 & 209\tabularnewline
+Napthalene & 0.20 & 0.80 & 385 \\
+Anthracene & 0.70 & 0.30 & 318 \\
+Pyrene & 0.6 & low & 322 \\
+Tetracene & 0.1 & 0.65 & 251 \\
+Pentacene & 0.10 & 0.15 & 209 \\
 \bottomrule
 \end{longtable}
 
@@ -1823,18 +2058,18 @@ Conversely for naphthalene phosphorescence (in glass at 77 K) the quantum yield 
 \begin{longtable}[]{@{}llll@{}}
 \caption{\label{tab:heavyatom} The affect of substitution of different halogens on the rates of phosphorescence and singlet to triplet intersystem crossing.}\tabularnewline
 \toprule
-& k\textsubscript{p} & k\textsubscript{ST} & Φ\textsubscript{p} / Φ \textsubscript{f}\tabularnewline
+& k\textsubscript{p} & k\textsubscript{ST} & Φ\textsubscript{p} / Φ \textsubscript{f} \\
 \midrule
 \endfirsthead
 \toprule
-& k\textsubscript{p} & k\textsubscript{ST} & Φ\textsubscript{p} / Φ \textsubscript{f}\tabularnewline
+& k\textsubscript{p} & k\textsubscript{ST} & Φ\textsubscript{p} / Φ \textsubscript{f} \\
 \midrule
 \endhead
-Napthalene & 0.05 & 0.39 & 0.09\tabularnewline
-1-fluoronaphthalene & 0.23 & 0.42 & 0.07\tabularnewline
-1-chloronaphthalene & 1.1 & 2.35 & 5.2\tabularnewline
-1-bromonaphthalene & 13.5 & 36.5 & 169\tabularnewline
-1-iodonaphthalene & 190 & 310 & \textgreater760\tabularnewline
+Napthalene & 0.05 & 0.39 & 0.09 \\
+1-fluoronaphthalene & 0.23 & 0.42 & 0.07 \\
+1-chloronaphthalene & 1.1 & 2.35 & 5.2 \\
+1-bromonaphthalene & 13.5 & 36.5 & 169 \\
+1-iodonaphthalene & 190 & 310 & \textgreater760 \\
 \bottomrule
 \end{longtable}
 
@@ -1848,16 +2083,16 @@ Briefly explain why the rates of these processes increase as we move down the gr
 \begin{longtable}[]{@{}llllll@{}}
 \caption{\label{tab:osphen} The spectroscopic details of a family of osmium complexes.}\tabularnewline
 \toprule
-& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ ns & Φ\textsubscript{em}\tabularnewline
+& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ ns & Φ\textsubscript{em} \\
 \midrule
 \endfirsthead
 \toprule
-& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ ns & Φ\textsubscript{em}\tabularnewline
+& λ\textsubscript{abs} / nm & λ\textsubscript{em} / nm & ΔE / eV & τ/ ns & Φ\textsubscript{em} \\
 \midrule
 \endhead
-{[}Os(phen)\textsubscript{3}{]}\textsuperscript{2+} & 650 & 720 & 0.186 & 260 & 0.016\tabularnewline
-{[}Os(phen)\textsubscript{2}(dppene){]}\textsuperscript{2+} & 455 & 609 & 0.69 & 1830 & 0.138\tabularnewline
-{[}Os(phen)(dppene)\textsubscript{2}{]}\textsuperscript{2+} & 400 & 530 & 0.761 & 3600 & 0.518\tabularnewline
+{[}Os(phen)\textsubscript{3}{]}\textsuperscript{2+} & 650 & 720 & 0.186 & 260 & 0.016 \\
+{[}Os(phen)\textsubscript{2}(dppene){]}\textsuperscript{2+} & 455 & 609 & 0.69 & 1830 & 0.138 \\
+{[}Os(phen)(dppene)\textsubscript{2}{]}\textsuperscript{2+} & 400 & 530 & 0.761 & 3600 & 0.518 \\
 \bottomrule
 \end{longtable}
 
@@ -2112,20 +2347,20 @@ The following data were collected for the emission of acridone.
 \begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:acridonequench} The effect of potassium iodide concentration on emission intensity and fluorescence lifetime of acridone in aqueous solution.}\tabularnewline
 \toprule
-{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / arb & τ / ns\tabularnewline
+{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / arb & τ / ns \\
 \midrule
 \endfirsthead
 \toprule
-{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / arb & τ / ns\tabularnewline
+{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / arb & τ / ns \\
 \midrule
 \endhead
-0 & 1.100 & 16580 & 17.60\tabularnewline
-0.040 & 1.060 & 3753 & 3.90\tabularnewline
-0.100 & 1.000 & 1566 & 1.80\tabularnewline
-0.200 & 0.900 & 721 & 0.95\tabularnewline
-0.300 & 0.800 & 446 & 0.64\tabularnewline
-0.500 & 0.600 & 242 & 0.39\tabularnewline
-0.800 & 0.300 & 121 & 0.25\tabularnewline
+0 & 1.100 & 16580 & 17.60 \\
+0.040 & 1.060 & 3753 & 3.90 \\
+0.100 & 1.000 & 1566 & 1.80 \\
+0.200 & 0.900 & 721 & 0.95 \\
+0.300 & 0.800 & 446 & 0.64 \\
+0.500 & 0.600 & 242 & 0.39 \\
+0.800 & 0.300 & 121 & 0.25 \\
 \bottomrule
 \end{longtable}
 
@@ -2253,6 +2488,17 @@ Why does the measured lifetime depend upon concentration?
 If a solution of pyrene in cyclohexane is excited with a very short (ps) pulse of lightafter 1 ns the emission spectrum observed is mainly that of the momomer, whereas after 100 ns emission is principally from the excimer. Why is this the case?
 
 \emph{(This will be a discussion question)}
+
+\hypertarget{sec:polarsolv}{%
+\subsection{Short conceptual question - effect of polar solvents on emission}\label{sec:polarsolv}}
+
+Solutions containing anthracence and diethylaniline are shown to have broad emission at around 450 nm in toluene, but in dichloromethane no emission is observed.
+
+The emission from athracene has λ\textsubscript{max} of 375 nm.
+
+Suggest the processes going on which account for these observations.
+
+You can find the answer to this question in \ref{sec:polarsolvans}
 
   \bibliography{book.bib,packages.bib}
 
