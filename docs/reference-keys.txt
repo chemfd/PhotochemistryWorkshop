@@ -2,6 +2,7 @@ fig:EMWave
 fig:EMspect
 fig:HAbsEm
 fig:RhoAbsEm
+eq:BeerLambert
 fig:BeerLambert
 fig:Butadiene
 fig:FrankCondon
@@ -26,7 +27,6 @@ fig:ethidiumsolvent
 fig:cistransazobenzeneisomerisation
 tab:azobenzeneabs
 fig:stilbene
-eq:BeerLambert
 fig:bpyalts
 fig:Cu
 fig:anthracene
@@ -83,6 +83,8 @@ fig:stilbeneindene
 tab:smallmolQY
 tab:heavyatom
 tab:osphen
+fig:overlapans
+eq:QYST
 fig:excimer
 fig:pyreneexcimer
 fig:exciplex
@@ -169,6 +171,7 @@ sec:tripletannihilation
 sec:O2quench
 before-completing-this-section-1
 ch:Workshop3
+questions
 sec:overlap
 sec:structureQY
 sec:ratephos
@@ -178,6 +181,16 @@ sec:dsolvent
 sec:isotope
 sec:heavy
 sec:osphen
+answers
+sec:overlapans
+sec:structureQYans
+sec:ratephosans
+sec:calcphosans
+sec:exhydrocarbonsans
+sec:dsolventans
+sec:isotopeans
+sec:heavyans
+sec:osphenans
 ch:excited
 sec:exitedLOs
 sec:excimers
