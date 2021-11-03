@@ -17,11 +17,12 @@ How would the following affect this overlap integral?
 
 *(I will use drawing in UniDoodle to ask this in class, with the second part being a discussion question)*
 
-## Short conceptual question - The effect of structural changes on quantum yield {#sec:structureQY}
+### Short conceptual question - The effect of structural changes on quantum yield {#sec:structureQY}
 
 5,10-dihydroindeno[2,1-a]indene and trans-stilbene (figure \@ref(fig:stilbeneindene)) are similar in structure but have very different fluorescent quantum yields of 1.00 and 0.05 respectively, however for trans-stilbene this increases to 0.75 at 77 K. Suggest a reason for the difference in quantum yield of:
-    - the two molecules
-    - the two temperatures
+
+- the two molecules
+- the two temperatures
     
 ```{r echo=FALSE, stilbeneindene, out.width='60%', fig.show='hold', fig.align='center', fig.cap='5,10-dihydroindeno[2,1-a]indene (left) and trans-stilbene (right)'}
 knitr::include_graphics("Images/stilbeneindene.png")
