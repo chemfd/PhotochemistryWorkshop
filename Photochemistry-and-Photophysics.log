@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  22 OCT 2021 23:59
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  4 NOV 2021 22:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -451,6 +451,15 @@ LaTeX Warning: Label `eq:lifetimefluor' multiply defined.
 
 LaTeX Warning: Label `tab:actinometer' multiply defined.
 
+
+LaTeX Warning: Label `eq:QYphos' multiply defined.
+
+
+LaTeX Warning: Label `eq:QYfluor' multiply defined.
+
+
+LaTeX Warning: Label `eq:diffcontrolrate' multiply defined.
+
 )
 \openout1 = `Photochemistry-and-Photophysics.aux'.
 
@@ -825,19 +834,19 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 2.
-[3] [4])
+[3])
 \tf@toc=\write3
 \openout3 = `Photochemistry-and-Photophysics.toc'.
 
-[5] [6
-
-]
+[4]
 Chapter 1.
-[7] [8] [9] [10
+[5
+
+] [6] [7] [8
 
 ]
 Chapter 2.
-[11]
+[9]
 Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
@@ -849,11 +858,11 @@ Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 
 Overfull \hbox (24.08673pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 12 \TU/lmr/m/sl/10 CHAPTER 2.  INTRODUCTION TO PHOTOCHEMISTRY & 
+\TU/lmr/m/n/10 10 \TU/lmr/m/sl/10 CHAPTER 2.  INTRODUCTION TO PHOTOCHEMISTRY & 
 PHOTOPHYSICS
  []
 
-[12]
+[10]
 File: images/EM-Wave.png Graphic file (type bmp)
 <images/EM-Wave.png>
 
@@ -875,13 +884,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--256
 
 File: images/EMspectrumspectroscopy.png Graphic file (type bmp)
 <images/EMspectrumspectroscopy.png>
-[13]
+[11]
 Overfull \hbox (24.08673pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 14 \TU/lmr/m/sl/10 CHAPTER 2.  INTRODUCTION TO PHOTOCHEMISTRY & 
+\TU/lmr/m/n/10 12 \TU/lmr/m/sl/10 CHAPTER 2.  INTRODUCTION TO PHOTOCHEMISTRY & 
 PHOTOPHYSICS
  []
 
-[14]
+[12]
 Chapter 3.
 File: images/HAbsEm.png Graphic file (type bmp)
 <images/HAbsEm.png>
@@ -913,12 +922,12 @@ d under
 
 File: images/Rhodamine6GAbsEm.png Graphic file (type bmp)
 <images/Rhodamine6GAbsEm.png>
-[15
+[13
 
-] [16]
+] [14]
 File: images/BeerLambert.pdf Graphic file (type pdf)
 <use images/BeerLambert.pdf>
-[17] [18]
+[15] [16]
 File: images/Butadiene.png Graphic file (type bmp)
 <images/Butadiene.png>
 
@@ -927,7 +936,7 @@ Underfull \hbox (badness 2005) in paragraph at lines 390--390
 nciples-of-
  []
 
-[19]
+[17]
 File: images/FrankCondon.png Graphic file (type bmp)
 <images/FrankCondon.png>
 
@@ -952,10 +961,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 405--405
 \TU/lmr/m/n/10 M. Somoza](http://www.gnu.org/licenses/fdl-1.3.html), CC-BY-SA-
  []
 
-[20]
+[18]
 File: images/Anthracene.png Graphic file (type bmp)
 <images/Anthracene.png>
-[21]
+[19]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 437.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
@@ -968,12 +977,12 @@ File: images/octatrienestructure.png Graphic file (type bmp)
 <images/octatrienestructure.png>
 File: images/longene.png Graphic file (type bmp)
 <images/longene.png>
-[22]
+[20]
 File: images/Ti3splitting.png Graphic file (type bmp)
 <images/Ti3splitting.png>
-[23]
+[21]
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
-[24]
+[22]
 File: images/Hbondingen.png Graphic file (type bmp)
 <images/Hbondingen.png>
 Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
@@ -985,10 +994,10 @@ Missing character: There is no σ in font [lmroman10-regular]:mapping=tex-text;!
 
 Overfull \hbox (1.64232pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 3.7.  STRUCTURE AND BONDING UPON ABSORPTION OF A PHOTON \TU/lmr
-/m/n/10 25
+/m/n/10 23
  []
 
-[25] [26]
+[23] [24]
 File: images/CS2.png Graphic file (type bmp)
 <images/CS2.png>
 Missing character: There is no ⊥ in font [lmroman10-regular]:mapping=tex-text;!
@@ -997,14 +1006,14 @@ File: images/adenosine.png Graphic file (type bmp)
 <images/adenosine.png>
 File: images/PhenRubpy3.png Graphic file (type bmp)
 <images/PhenRubpy3.png>
-[27]
+[25]
 File: images/Solvatochromism.png Graphic file (type bmp)
 <images/Solvatochromism.png>
 File: images/DNAmelt.png Graphic file (type bmp)
 <images/DNAmelt.png>
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-[28] [29] [30]
+[26] [27] [28]
 Chapter 4.
 File: images/bpy.png Graphic file (type bmp)
 <images/bpy.png>
@@ -1012,9 +1021,9 @@ File: images/molarextquestion.png Graphic file (type bmp)
 <images/molarextquestion.png>
 File: images/Molar_extinction_coefficients.png Graphic file (type bmp)
 <images/Molar_extinction_coefficients.png>
-[31
+[29
 
-] [32]
+] [30]
 File: images/rhodamine6G.png Graphic file (type bmp)
 <images/rhodamine6G.png>
 File: images/atomic_emission_spectrum.png Graphic file (type bmp)
@@ -1024,65 +1033,65 @@ File: images/ethidium.png Graphic file (type bmp)
 
 Underfull \vbox (badness 3471) has occurred while \output is active []
 
-[33]
+[31]
 File: images/cistransazobenzene.png Graphic file (type bmp)
 <images/cistransazobenzene.png>
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
-[34]
+[32]
 File: images/stilbene.png Graphic file (type bmp)
 <images/stilbene.png>
-[35]
+[33]
 Missing character: There is no μ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no μ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no μ in font [lmroman7-regular]:mapping=tex-text;!
 Missing character: There is no μ in font [lmroman5-regular]:mapping=tex-text;!
 File: images/structurealts.png Graphic file (type bmp)
 <images/structurealts.png>
-[36]
+[34]
 
-LaTeX Warning: Reference `fig:molarextstructures' on page 37 undefined on input
+LaTeX Warning: Reference `fig:molarextstructures' on page 35 undefined on input
  line 880.
 
 File: images/CuIIenergylevels.png Graphic file (type bmp)
 <images/CuIIenergylevels.png>
-[37]
+[35]
 
-LaTeX Warning: Reference `fig:molecular' on page 38 undefined on input line 904
+LaTeX Warning: Reference `fig:molecular' on page 36 undefined on input line 904
 .
 
 
-LaTeX Warning: Reference `fig:atomic' on page 38 undefined on input line 904.
+LaTeX Warning: Reference `fig:atomic' on page 36 undefined on input line 904.
 
 
-LaTeX Warning: Reference `fig:molecular' on page 38 undefined on input line 916
+LaTeX Warning: Reference `fig:molecular' on page 36 undefined on input line 916
 .
 
 File: images/anthracene.png Graphic file (type bmp)
 <images/anthracene.png>
 
-LaTeX Warning: Reference `fig:ethidium' on page 38 undefined on input line 932.
+LaTeX Warning: Reference `fig:ethidium' on page 36 undefined on input line 932.
 
 
 
-LaTeX Warning: Reference `sec:linewidth' on page 38 undefined on input line 936
+LaTeX Warning: Reference `sec:linewidth' on page 36 undefined on input line 936
 .
 
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[38] [39]
+[36] [37]
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
-[40]
+[38]
 Chapter 5.
-[41
+[39
 
 ]
 File: images/Jablonski.png Graphic file (type bmp)
 <images/Jablonski.png>
-[42]
+[40]
 Overfull \hbox (3.20334pt too wide) in alignment at lines 1055--1060
  [] [] [] 
  []
@@ -1097,7 +1106,7 @@ Overfull \hbox (3.20334pt too wide) in alignment at lines 1064--1074
  [] [] [] 
  []
 
-[43]
+[41]
 File: images/anthracenekasha.png Graphic file (type bmp)
 <images/anthracenekasha.png>
 File: images/stokesspectrum.png Graphic file (type bmp)
@@ -1119,20 +1128,20 @@ Underfull \hbox (badness 1502) in paragraph at lines 1107--1107
 essed
  []
 
-[44]
+[42]
 File: images/stokesenergy.png Graphic file (type bmp)
 <images/stokesenergy.png>
-[45]
+[43]
 File: images/azulene.png Graphic file (type bmp)
 <images/azulene.png>
 
 Underfull \vbox (badness 3250) has occurred while \output is active []
 
-[46]
+[44]
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-[47]
+[45]
 Overfull \hbox (3.0883pt too wide) in alignment at lines 1172--1177
  [] [] [] [] 
  []
@@ -1148,26 +1157,23 @@ Overfull \hbox (3.0883pt too wide) in alignment at lines 1181--1189
  []
 
 
-LaTeX Warning: Reference `sec:SSQemissionans' on page 48 undefined on input lin
+LaTeX Warning: Reference `sec:SSQemissionans' on page 46 undefined on input lin
 e 1198.
 
 
-LaTeX Warning: Reference `eq:QYIC' on page 48 undefined on input line 1198.
+LaTeX Warning: Reference `eq:QYIC' on page 46 undefined on input line 1198.
 
 
-LaTeX Warning: Reference `eq:QYST' on page 48 undefined on input line 1198.
+LaTeX Warning: Reference `eq:QYTS' on page 46 undefined on input line 1198.
 
-
-LaTeX Warning: Reference `eq:QYTS' on page 48 undefined on input line 1198.
-
-[48] [49]
+[46] [47]
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 File: images/fluorlifetime.png Graphic file (type bmp)
 <images/fluorlifetime.png>
-[50] [51] [52
+[48] [49] [50
 
 ]
 Chapter 6.
@@ -1177,19 +1183,19 @@ File: images/fluorescein.png Graphic file (type bmp)
 <images/fluorescein.png>
 File: images/fluoresceinspec.png Graphic file (type bmp)
 <images/fluoresceinspec.png>
-[53]
+[51]
 File: images/Rubpy3spectra.png Graphic file (type bmp)
 <images/Rubpy3spectra.png>
 
 Underfull \vbox (badness 1867) has occurred while \output is active []
 
-[54]
+[52]
 File: images/YODNA.png Graphic file (type bmp)
 <images/YODNA.png>
 
 Underfull \vbox (badness 4096) has occurred while \output is active []
 
-[55]
+[53]
 File: images/ethidiumstructure.png Graphic file (type bmp)
 <images/ethidiumstructure.png>
 Missing character: There is no ε in font [lmroman10-regular]:mapping=tex-text;!
@@ -1199,27 +1205,27 @@ File: images/ethidiumspectra.png Graphic file (type bmp)
 <images/ethidiumspectra.png>
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[56] [57]
+[54] [55]
 File: images/rateslifetime.png Graphic file (type bmp)
 <images/rateslifetime.png>
-[58]
+[56]
 File: images/RubpyMLCT.png Graphic file (type bmp)
 <images/RubpyMLCT.png>
-[59]
+[57]
 File: images/Jablonski.png Graphic file (type bmp)
 <images/Jablonski.png>
-[60] [61]
+[58] [59]
 
-LaTeX Warning: Reference `(' on page 62 undefined on input line 1616.
+LaTeX Warning: Reference `(' on page 60 undefined on input line 1616.
 
 
-LaTeX Warning: Reference `(' on page 62 undefined on input line 1620.
+LaTeX Warning: Reference `(' on page 60 undefined on input line 1620.
 
-[62] [63] [64
+[60] [61] [62
 
 ]
 Chapter 7.
-[65]
+[63]
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
@@ -1258,12 +1264,25 @@ Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 
 Overfull \hbox (15.06453pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 64 \TU/lmr/m/sl/10 CHAPTER 7.  NON-EMMISIVE DEACTIVATION OF THE 
+EXCITED STATE
+ []
+
+[64] [65]
+Missing character: There is no η in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (15.06453pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 66 \TU/lmr/m/sl/10 CHAPTER 7.  NON-EMMISIVE DEACTIVATION OF THE 
 EXCITED STATE
  []
 
-[66] [67]
-Missing character: There is no η in font [lmroman10-regular]:mapping=tex-text;!
+[66]
+File: images/forster.png Graphic file (type bmp)
+<images/forster.png>
+Missing character: There is no κ in font [lmroman10-regular]:mapping=tex-text;!
+[67]
+File: images/overlapintegral.png Graphic file (type bmp)
+<images/overlapintegral.png>
 
 Overfull \hbox (15.06453pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 68 \TU/lmr/m/sl/10 CHAPTER 7.  NON-EMMISIVE DEACTIVATION OF THE 
@@ -1271,12 +1290,13 @@ EXCITED STATE
  []
 
 [68]
-File: images/forster.png Graphic file (type bmp)
-<images/forster.png>
-Missing character: There is no κ in font [lmroman10-regular]:mapping=tex-text;!
+File: images/forsterdistance.png Graphic file (type bmp)
+<images/forsterdistance.png>
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 [69]
-File: images/overlapintegral.png Graphic file (type bmp)
-<images/overlapintegral.png>
+File: images/Dexter.png Graphic file (type bmp)
+<images/Dexter.png>
 
 Overfull \hbox (15.06453pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 70 \TU/lmr/m/sl/10 CHAPTER 7.  NON-EMMISIVE DEACTIVATION OF THE 
@@ -1284,43 +1304,29 @@ EXCITED STATE
  []
 
 [70]
-File: images/forsterdistance.png Graphic file (type bmp)
-<images/forsterdistance.png>
-Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-[71]
-File: images/Dexter.png Graphic file (type bmp)
-<images/Dexter.png>
-
-Overfull \hbox (15.06453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 72 \TU/lmr/m/sl/10 CHAPTER 7.  NON-EMMISIVE DEACTIVATION OF THE 
-EXCITED STATE
- []
-
-[72]
 File: images/triplettriplet.png Graphic file (type bmp)
 <images/triplettriplet.png>
 
 Underfull \vbox (badness 1867) has occurred while \output is active []
 
-[73]
+[71]
 File: images/O2.png Graphic file (type bmp)
 <images/O2.png>
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 
 Overfull \hbox (15.06453pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 72 \TU/lmr/m/sl/10 CHAPTER 7.  NON-EMMISIVE DEACTIVATION OF THE 
+EXCITED STATE
+ []
+
+[72] [73]
+Overfull \hbox (15.06453pt too wide) has occurred while \output is active
 \TU/lmr/m/n/10 74 \TU/lmr/m/sl/10 CHAPTER 7.  NON-EMMISIVE DEACTIVATION OF THE 
 EXCITED STATE
  []
 
-[74] [75]
-Overfull \hbox (15.06453pt too wide) has occurred while \output is active
-\TU/lmr/m/n/10 76 \TU/lmr/m/sl/10 CHAPTER 7.  NON-EMMISIVE DEACTIVATION OF THE 
-EXCITED STATE
- []
-
-[76
+[74
 
 ]
 Chapter 8.
@@ -1328,103 +1334,108 @@ File: images/overlap.png Graphic file (type bmp)
 <images/overlap.png>
 File: Images/stilbeneindene.png Graphic file (type bmp)
 <Images/stilbeneindene.png>
+[75] [76] [77]
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+[78]
+File: images/intconvoverlap2.png Graphic file (type bmp)
+<images/intconvoverlap2.png>
 
-Underfull \vbox (badness 1668) has occurred while \output is active []
-
-[77] [78]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (192.00122pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 8.5.  SHORT CONCEPTUAL QUESTION - DEACTIVATION OF EXCITED STATE
- AROMATIC HYDROCARBSONS \TU/lmr/m/n/10 79
- []
+Underfull \vbox (badness 3271) has occurred while \output is active []
 
 [79]
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+[80] [81] [82]
+Missing character: There is no 𝜙 in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 𝜙 in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \vbox (badness 2460) has occurred while \output is active []
+Underfull \vbox (badness 3989) has occurred while \output is active []
 
-[80]
-Overfull \hbox (371.69353pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 8.9.  SHORT CONCEPTUAL QUESTION - THE EFFECT OF ABSORBANCE AND 
-EMISSION WAVELENGTHS ON THE QUANTUM YIELD OF EMISSION \TU/lmr/m/n/10 81
- []
-
-[81] [82
+[83] [84]
+Chapter 9.
+[85
 
 ]
-Chapter 9.
-[83]
 File: images/excimer.png Graphic file (type bmp)
 <images/excimer.png>
 File: images/pyreneexcimer.png Graphic file (type bmp)
 <images/pyreneexcimer.png>
-[84]
+[86]
 File: images/exciplex.png Graphic file (type bmp)
 <images/exciplex.png>
 File: images/exciplexenergy.png Graphic file (type bmp)
 <images/exciplexenergy.png>
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
-[85]
+[87]
 File: images/retinal.png Graphic file (type bmp)
 <images/retinal.png>
 File: images/cistransstilbene.pdf Graphic file (type pdf)
 <use images/cistransstilbene.pdf>
-[86]
+[88]
 File: images/cisquench.png Graphic file (type bmp)
 <images/cisquench.png>
-[87] [88
+[89] [90
 
 ]
 Chapter 10.
-[89]
+[91]
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 File: images/pyrene.png Graphic file (type bmp)
 <images/pyrene.png>
-[90]
 File: images/MAC.png Graphic file (type bmp)
 <images/MAC.png>
 File: images/AMP.png Graphic file (type bmp)
 <images/AMP.png>
-[91]
+[92] [93]
 File: images/acridone.png Graphic file (type bmp)
 <images/acridone.png>
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
-[92]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[94] [95]
+File: images/quenchintensityconc.png Graphic file (type bmp)
+<images/quenchintensityconc.png>
+File: images/staticquenching.png Graphic file (type bmp)
+<images/staticquenching.png>
+[96]
+File: images/acridonequenchI0I.png Graphic file (type bmp)
+<images/acridonequenchI0I.png>
+File: images/acridonequench.png Graphic file (type bmp)
+<images/acridonequench.png>
+[97] [98] [99] [100
+
+]
 Chapter 11.
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 
 Underfull \vbox (badness 1320) has occurred while \output is active []
 
-[93
-
-]
+[101]
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
-[94]
+[102]
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 File: images/phenylindole.pdf Graphic file (type pdf)
 <use images/phenylindole.pdf>
-[95]
+[103]
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 No file Photochemistry-and-Photophysics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2505.
-[96]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2505.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2790.
+[104]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2790.
 (./Photochemistry-and-Photophysics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2505.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2505.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2790.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2790.
 
 LaTeX Warning: There were undefined references.
 
@@ -1433,12 +1444,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19679 strings out of 479418
- 351406 string characters out of 5884585
- 799540 words of memory out of 5000000
- 36837 multiletter control sequences out of 15000+600000
+ 19746 strings out of 479418
+ 353214 string characters out of 5884585
+ 802688 words of memory out of 5000000
+ 36899 multiletter control sequences out of 15000+600000
  539798 words of font info for 89 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,9n,118p,1067b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Photochemistry-and-Photophysics.pdf (96 pages).
+Output written on Photochemistry-and-Photophysics.pdf (104 pages).

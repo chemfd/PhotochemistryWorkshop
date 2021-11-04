@@ -2,7 +2,6 @@ fig:EMWave
 fig:EMspect
 fig:HAbsEm
 fig:RhoAbsEm
-eq:BeerLambert
 fig:BeerLambert
 fig:Butadiene
 fig:FrankCondon
@@ -27,6 +26,7 @@ fig:ethidiumsolvent
 fig:cistransazobenzeneisomerisation
 tab:azobenzeneabs
 fig:stilbene
+eq:BeerLambert
 fig:bpyalts
 fig:Cu
 fig:anthracene
@@ -98,6 +98,11 @@ fig:MAC
 fig:AMP
 fig:acridone
 tab:acridonequench
+eq:sternvolmer
+fig:quenchingtemp
+fig:staticquench
+fig:acridoneI0I
+fig:acridonequench
 fig:phenylindole
 welcome
 workshops-for-photochemistry-photophysics
@@ -198,6 +203,7 @@ exciplexes
 sec:photoinducedisom
 before-completing-this-section-2
 ch:Workshop4
+questions-1
 sec:diffcontrol
 sec:emintquench
 sec:temp
@@ -206,6 +212,13 @@ sec:static_question
 short-conceptual-question---isoemissive-point
 sec:static2
 sec:acridone
+answers-1
+sec:diffcontrolans
+sec:emintquenchans
+sec:tempans
+sec:staticans
+sec:static2ans
+sec:acridoneans
 ch:Workshop5
 sec:O2quench_question
 sec:FRET
