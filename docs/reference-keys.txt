@@ -104,6 +104,8 @@ fig:staticquench
 fig:acridoneI0I
 fig:acridonequench
 fig:phenylindole
+fig:gsredox
+fig:excitedredox
 welcome
 workshops-for-photochemistry-photophysics
 sec:AddnRes
@@ -220,6 +222,7 @@ sec:staticans
 sec:static2ans
 sec:acridoneans
 ch:Workshop5
+questions-2
 sec:O2quench_question
 sec:FRET
 sec:FRETdist
@@ -231,3 +234,11 @@ sec:FRETDNA
 short-conceptual-question---lifetimes
 short-conceptual-question---effect-of-time-delay
 sec:polarsolv
+answers-2
+short-conceptual-question---change-in-behaviour-on-freezing-1
+short-conceptual-question---effect-of-polar-solvents-on-emission
+short-conceptual-question---isoemissive-point-1
+short-conceptual-question---redox-chemistry-1
+short-conceptual-question---effect-of-time-delay-1
+short-conceptual-question---lifetimes-1
+short-conceptual-question---effect-of-time-delay-2
